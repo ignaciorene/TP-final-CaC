@@ -68,6 +68,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .menu-link:hover{
