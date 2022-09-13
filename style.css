@@ -313,6 +313,7 @@ body{
     text-decoration: none;
     color: white;
     font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
 }
 
 .main-card-text-container{
@@ -411,6 +412,7 @@ body{
     border-radius: 0.5rem;
     vertical-align: top;
 }
+
 
 /*FOOTER*/
 
