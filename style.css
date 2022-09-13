@@ -195,6 +195,7 @@ body{
     background-size: cover;
     font-family: 'Bangers', cursive;
     font-size: xx-large;
+    letter-spacing: 2px;
 }
 
 .main-cuestionario-background{
@@ -246,6 +247,7 @@ body{
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
 }
 
 .main-title-line{
@@ -346,10 +348,9 @@ body{
 /*CUESTIONARIO*/
 
 .bloquepregunta {
-    --color-principal: rgb(160, 29, 29 );
-    --color-secundario: rgb(123, 23, 180);
-    --color-secundario-oscuro: rgb(86, 15, 127);
-    font-family: 'Roboto', sans-serif;
+    --color-principal: #457B9D;
+    --color-secundario: #324766;
+    --color-secundario-oscuro: #1D3557;
 }
 
 .pregunta {
@@ -360,6 +361,8 @@ body{
     margin: 1.5% 0%;
     border-top: 5px solid var(--color-secundario-oscuro);
     border-bottom: 5px solid var(--color-secundario-oscuro);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
 }
 
 .bloqueopciones {
@@ -367,6 +370,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: 'Open Sans', sans-serif;
 }   
 
 .opcion{
