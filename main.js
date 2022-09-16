@@ -37,3 +37,9 @@ searchCancel.addEventListener('click', ()=>{
 
     searchInput.querySelector('input').value='';
 })
+
+const logoButton=document.querySelector('.logo-container img');
+
+logoButton.addEventListener('click',()=>{
+    window.location='./index.html';
+})
