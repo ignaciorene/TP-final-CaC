@@ -404,6 +404,38 @@ body{
     vertical-align: top;
 }
 
+/*CUESTIONARIO*/
+
+.linea-formulario {
+    font-family: 'Bangers', cursive;
+    font-size: large;
+    margin: 1rem;
+}
+
+.elemento-formulario {
+    display: inline-block;
+    font-family: 'Bangers', cursive;
+    font-size: large;
+    width: 50%;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.mensaje {
+    height: 10rem;
+}
+
+.envio {
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+
+.envio:hover {
+    cursor: pointer;
+    background-color: #324766;
+    color: #D5D5D5;
+}
+
 /*LOGIN*/
 .login-container{
     width: 15%;
