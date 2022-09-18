@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!------------------------------------HEADER------------------------------------>
     <header>
         <nav class="navbar">
             <div class="menu-container">
@@ -37,7 +38,7 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">
+                        <a href="./Contacto.html" class="menu-link">
                             <i class="uil uil-postcard"></i>
                             <p>Contacto</p>
                         </a>
@@ -79,40 +80,49 @@
             </div>
         </nav>
     </header>
-    <div class="main-container news">
-        <div class="main-container-title">
-            <div class="main-title">
-                <h1>Contacto</h1>
-            </div>
-            <div class="main-title-line"></div>
+
+    <!------------------------------------TÍTULO------------------------------------>
+    <div class="main-container-title">
+        <div class="main-title">
+            <h1>Contacto</h1>
         </div>
-        <div class="formulario">
-            <div class="linea-formulario">
-                <div class="elemento-formulario label">Nombre completo:</div><input class="elemento-formulario"
-                    type="text" name="nombre" placeholder="Juan Pérez" size="30">
-            </div>
-            <div class="linea-formulario">
-                <div class="elemento-formulario label">Correo electrónico:</div><input class="elemento-formulario"
-                    type="text" name="correo" placeholder="juan.perez123@gmail.com" size="30">
-            </div>
-            <div class="linea-formulario">
-                <div class="elemento-formulario label">Mensaje:</div><input class="elemento-formulario mensaje"
-                    type="textarea" name="mensaje" placeholder="¡Dejanos tu mensaje acá!" size="50" cols="5"
-                    wrap="hard">
-            </div>
-            <div class="linea-formulario"><input class="elemento-formulario envio" type="submit" value="Enviar"></div>
+        <div class="main-title-line"></div>
+    </div>
+    <!------------------------------------FORMULARIO DE CONTACTO------------------------------------>
+    <div class="formulario">
+
+        <!------------------------------------NOMBRE COMPLETO------------------------------------>
+        <div class="bloque-formulario">
+            <div class="elemento-formulario label">Nombre completo:</div>
+            <input class="elemento-formulario" name="nombre" placeholder="Por ejemplo: Juan Pérez" size="30">
+        </div>
+
+        <!------------------------------------CORREO ELECTRÓNICO------------------------------------>
+        <div class="bloque-formulario">
+            <div class="elemento-formulario label">Correo electrónico:</div><input class="elemento-formulario"
+                name="correo" placeholder="Por ejemplo: juan.perez123@gmail.com" size="30">
+        </div>
+
+        <!------------------------------------MENSAJE------------------------------------>
+        <div class="bloque-formulario">
+            <div class="elemento-formulario label">Mensaje:</div><textarea class="elemento-formulario mensaje"
+                name="mensaje" placeholder="¡Dejanos tu mensaje acá!" cols="60" rows="8"></textarea>
+        </div>
+
+        <!------------------------------------BOTÓN DE ENVÍO------------------------------------>
+        <div class="bloque-formulario"><input class="elemento-formulario envio" type="submit" value="Enviar">
         </div>
     </div>
-        <!--------------------------------------FOOTER------------------------------------>
-        <footer>
-            <div class="copyright-container">
-                <p>© 2022 Aninews.com - Todos los derechos reservados.</p><br>
-                <p>Respeta el trabajo de nuestros redactores. Si quieres copiar o compartir nuestro contenido, puedes
-                    hacerlo siempre que reconozcas la autoría del contenido.</p>
-            </div>
-        </footer>
-        <!-------------------------------------------------------------------------------->
-        <script src="main.js"></script>
+    <!--------------------------------------FOOTER------------------------------------>
+    <footer>
+        <div class="copyright-container">
+            <p>© 2022 Aninews.com - Todos los derechos reservados.</p><br>
+            <p>Respeta el trabajo de nuestros redactores. Si quieres copiar o compartir nuestro contenido, puedes
+                hacerlo siempre que reconozcas la autoría del contenido.</p>
+        </div>
+    </footer>
+    <!-----------------------------------------SCRIPTS--------------------------------------->
+    <script src="main.js"></script>
 </body>
 
 </html>

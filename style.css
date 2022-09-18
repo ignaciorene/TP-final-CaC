@@ -337,13 +337,26 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/*CUESTIONARIO*/
-.titulo-cuestionario{
+/*CUESTIONARIO.HTML*/
+.linea-cuestionario{
     margin-top: 3rem;
 }
 
+.titulo-cuestionario{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 1.5% 0px;
+    background-color: var(--color-secundario);
+    margin: 1.5% 0%;
+    border-top: 5px solid var(--color-secundario-oscuro);
+    border-bottom: 5px solid var(--color-secundario-oscuro);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
 #primer-bloque-pregunta{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .bloquepregunta {
@@ -413,29 +426,51 @@ body{
     width: 100%;
 }
 
-/*CUESTIONARIO*/
+/*CONTACTO.HTML*/
 
-.linea-formulario {
+.formulario {
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bloque-formulario {
     font-family: 'Bangers', cursive;
     font-size: large;
     margin: 1rem;
-}
-
-.elemento-formulario {
-    display: inline-block;
-    font-family: 'Bangers', cursive;
-    font-size: large;
-    width: 50%;
-    text-align: center;
     border-radius: 0.3rem;
 }
 
+.elemento-formulario {
+    display: block;
+    font-family: 'Bangers', cursive;
+    font-size: large;
+    text-align: center;
+    border-width: 0.1rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.3rem 0.6rem;
+}
+
+.label {
+    color: #ffffff;
+    background-color: #324766;
+    font-size: larger;
+}
+
 .mensaje {
-    height: 10rem;
+    resize: vertical;
+    height: 8rem;
+    min-height: 8rem;
+    max-height: 15rem;
+    text-align: center;
 }
 
 .envio {
-    width: 4rem;
+    width: 100%;
     margin-bottom: 1rem;
 }
 
@@ -445,7 +480,7 @@ body{
     color: #D5D5D5;
 }
 
-/*LOGIN*/
+/*LOGIN.HTML*/
 .login-container{
     width: 15%;
     margin: auto;
