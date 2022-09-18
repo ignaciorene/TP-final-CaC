@@ -47,7 +47,7 @@ header{
 
 .menu-item{
     list-style: none;
-    margin: 1rem 0;
+    padding: 1rem 0;
     width: 100%;
 }
 
@@ -63,8 +63,8 @@ header{
     font-family: 'Open Sans', sans-serif;
 }
 
-.menu-link:hover{
-    color: #1D3557;
+.menu-item:hover{
+    background-color: #1D3557;
 }
 
 .menu-link i{
@@ -95,9 +95,9 @@ header{
 }
 
 .user{
-    border-top: 2px solid #324766;
+    border-top: 2px solid #1D3557;
     width: 100%;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 /*LOGO*/
@@ -338,6 +338,13 @@ body{
 }
 
 /*CUESTIONARIO*/
+.titulo-cuestionario{
+    margin-top: 3rem;
+}
+
+#primer-bloque-pregunta{
+    margin-top: 4rem;
+}
 
 .bloquepregunta {
     --color-principal: #457B9D;
@@ -379,6 +386,7 @@ body{
     color:rgb(245, 245, 245);
     background-color: var(--color-secundario);
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .bloquedescripcion {
@@ -402,6 +410,7 @@ body{
     border: 3px solid black;
     border-radius: 0.5rem;
     vertical-align: top;
+    width: 100%;
 }
 
 /*CUESTIONARIO*/
