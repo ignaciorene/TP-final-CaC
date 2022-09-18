@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap" rel="stylesheet">
@@ -15,12 +19,78 @@
 
 <body>
 
+    <header>
+        <nav class="navbar">
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="./index.html" class="menu-link">
+                            <i class="uil uil-estate"></i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="uil uil-newspaper"></i>
+                            <p>Noticias</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./Cuestionario.html" class="menu-link">
+                            <i class="uil uil-clipboard-alt"></i>
+                            <p>Cuestionario</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="uil uil-postcard"></i>
+                            <p>Contacto</p>
+                        </a>
+                    </li>
+                    <li class="menu-item user">
+                        <a href="./login.html" class="menu-link">
+                            <i class="uil uil-sign-in-alt"></i>
+                            <p>Login</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./signup.html" class="menu-link">
+                            <i class="uil uil-signin"></i>
+                            <p>Sign In</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="ANINEWS" width="100" height="100">
+            </div>
+            <div class="menu-search-container">
+                <div class="searchbar">
+                    <div class="searchbar-cancel-box">
+                        <i class="uil uil-times"></i>
+                    </div>
+                    <div class="searchbar-input">
+                        <input type="text" placeholder="Buscar...">
+                    </div>
+                    <div class="searchbar-box">
+                        <i class="uil uil-search"></i>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+<!------------------------------------------------------------------------------>
     <!-- PREGUNTA 1 -->
     <div class="bloquepregunta">
         <h1 class="pregunta">Pregunta 1: ¿Qué preferís hacer en tu tiempo libre?</h1>
         <div class="bloqueopciones">
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta1.opcionA.jpg" alt="imagen.pregunta1.opcionA">
+                <img class="imagen" src="img\imagen.pregunta1.opcionA.jpg" alt="imagen.pregunta1.opcionA">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN A<br>Compartir momentos con amistades y familia</h4>
                     <p>No hay nada como pasar los días con la gente que queremos</p>
@@ -28,7 +98,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta1.opcionB.png" alt="imagen.pregunta1.opcionB">
+                <img class="imagen" src="img\imagen.pregunta1.opcionB.png" alt="imagen.pregunta1.opcionB">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN B<br>Salir de aventuras y vivir nuevas experiencias</h4>
                     <p>Para mentes llenas de curiosidad, lo mejor es viajar, degustar platos nuevos, conocer personas y culturas diferentes</p>
@@ -36,7 +106,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta1.opcionC.png" alt="imagen.pregunta1.opcionC">
+                <img class="imagen" src="img\imagen.pregunta1.opcionC.png" alt="imagen.pregunta1.opcionC">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN C<br>Enfocarte en mejorar tus habilidades y destrezas</h4>
                     <p>Al final, para poder cumplir tus metas necesitás tener conocimientos y aptitudes</p>
@@ -50,7 +120,7 @@
         <h1 class="pregunta">Pregunta 2: En una batalla, ¿qué recurso te hace sentir más seguro?</h1>
         <div class="bloqueopciones">
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta2.opcionA.jpg" alt="imagen.pregunta2.opcionA">
+                <img class="imagen" src="img\imagen.pregunta2.opcionA.jpg" alt="imagen.pregunta2.opcionA">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN A<br>Buenas armas</h4>
                     <p>Espadas legendarias, armas a medida, pistolas con silenciador: lo fundamental</p>
@@ -58,7 +128,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta2.opcionB.png" alt="imagen.pregunta2.opcionB">
+                <img class="imagen" src="img\imagen.pregunta2.opcionB.png" alt="imagen.pregunta2.opcionB">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN B<br>Información</h4>
                     <p>El conocimiento es poder. Conocer estrategias y puntos débiles es vital</p>
@@ -66,7 +136,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta2.opcionC.jpg" alt="imagen.pregunta2.opcionC">
+                <img class="imagen" src="img\imagen.pregunta2.opcionC.jpg" alt="imagen.pregunta2.opcionC">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN C<br>Fuerza bruta</h4>
                     <p>Ser el más fuerte del lugar y tener los mejores poderes es muy importante</p>
@@ -80,7 +150,7 @@
         <h1 class="pregunta">Pregunta 3: ¿Qué rol asumirías dentro de un equipo?</h1>
         <div class="bloqueopciones">
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta3.opcionA.jpg" alt="imagen.pregunta3.opcionA">
+                <img class="imagen" src="img\imagen.pregunta3.opcionA.jpg" alt="imagen.pregunta3.opcionA">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN A<br>Estratega/Líder</h4>
                     <p>Los trabajos de análisis de situación y planificación son tu punto fuerte</p>
@@ -88,7 +158,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta3.opcionB.jpg" alt="imagen.pregunta3.opcionB">
+                <img class="imagen" src="img\imagen.pregunta3.opcionB.jpg" alt="imagen.pregunta3.opcionB">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN B<br>Luchador</h4>
                     <p>Básicamente sos quien hace el trabajo pesado</p>
@@ -96,7 +166,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta3.opcionC.jpg" alt="imagen.pregunta3.opcionC">
+                <img class="imagen" src="img\imagen.pregunta3.opcionC.jpg" alt="imagen.pregunta3.opcionC">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN C<br>Soporte</h4>
                     <p>Considerás que tu fortaleza está en complementar a los demás</p>
@@ -111,7 +181,7 @@
         <div class="bloqueopciones">
             <div class="opcion">
 
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta4.opcionA.jpg" alt="imagen.pregunta4.opcionA">
+                <img class="imagen" src="img\imagen.pregunta4.opcionA.jpg" alt="imagen.pregunta4.opcionA">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN A<br>Inteligencia</h4>
                     <p>El mayor poder está en la capacidad de pensar al 1000000%</p>
@@ -119,7 +189,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta4.opcionB.jpg" alt="imagen.pregunta4.opcionB">
+                <img class="imagen" src="img\imagen.pregunta4.opcionB.jpg" alt="imagen.pregunta4.opcionB">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN B<br>Habilidad técnica</h4>
                     <p>Manejo de armas y conocimiento de combate</p>
@@ -127,7 +197,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta4.opcionC.jpg" alt="imagen.pregunta4.opcionC">
+                <img class="imagen" src="img\imagen.pregunta4.opcionC.jpg" alt="imagen.pregunta4.opcionC">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN C<br>Capacidad para aprovechar la energía interior</h4>
                     <p>Chakra, haki, mana, respiraciones... Todo suma</p>
@@ -135,7 +205,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta4.opcionD.jpg" alt="imagen.pregunta4.opcionD">
+                <img class="imagen" src="img\imagen.pregunta4.opcionD.jpg" alt="imagen.pregunta4.opcionD">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN D<br>Superpoderes</h4>
                     <p>Leer mentes, flotar, estirarse a voluntad. ¡PLUS ULTRA!</p>
@@ -150,7 +220,7 @@
         <h1 class="pregunta">Pregunta 5: ¿Cuáles de estos colores te representan mejor?</h1>
         <div class="bloqueopciones">
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta5.opcionA.jpg" alt="imagen.pregunta5.opcionA">
+                <img class="imagen" src="img\imagen.pregunta5.opcionA.jpg" alt="imagen.pregunta5.opcionA">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN A<br>Amarillo / Azul / Rojo</h4>
                     <p>Colores con mucho carácter para personalidades fuertes</p>
@@ -158,7 +228,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta5.opcionB.jpg" alt="imagen.pregunta5.opcionB">
+                <img class="imagen" src="img\imagen.pregunta5.opcionB.jpg" alt="imagen.pregunta5.opcionB">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN B<br>Marrón / Verde</h4>
                     <p>Colores nobles y conectados a la naturaleza</p>
@@ -166,7 +236,7 @@
             </div>
 
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta5.opcionC.jpg" alt="imagen.pregunta5.opcionC">
+                <img class="imagen" src="img\imagen.pregunta5.opcionC.jpg" alt="imagen.pregunta5.opcionC">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN C<br>Gris / Naranja / Negro</h4>
                     <p>Colores misteriosos y que atraen fuerzas tanto de la luz como oscuras</p>
@@ -174,7 +244,7 @@
             </div>
             
             <div class="opcion">
-                <img class="imagen" src="Imagenes usadas\imagen.pregunta5.opcionD.jpg" alt="imagen.pregunta5.opcionD">
+                <img class="imagen" src="img\imagen.pregunta5.opcionD.jpg" alt="imagen.pregunta5.opcionD">
                 <div class="bloquedescripcion">
                     <h4>OPCIÓN D<br>Blanco / Celeste / Rosa / Violeta</h4>
                     <p>Colores especiales, divinos y extraordinarios</p>
@@ -183,6 +253,15 @@
         </div>
     </div>
     </div>
+
+<!--------------------------------------FOOTER------------------------------------>
+    <footer>
+        <div class="copyright-container">
+            <p>© 2022 Aninews.com - Todos los derechos reservados.</p><br><p>Respeta el trabajo de nuestros redactores. Si quieres copiar o compartir nuestro contenido, puedes hacerlo siempre que reconozcas la autoría del contenido.</p>
+        </div>
+    </footer>
+<!-------------------------------------------------------------------------------->
+    <script src="main.js"></script>
 </body>
 
 </html>
