@@ -174,6 +174,7 @@ body{
     width: 80%;
     margin: auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .main-cuestionario-container{
@@ -339,7 +340,7 @@ body{
 
 /*CUESTIONARIO.HTML*/
 .linea-cuestionario{
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .titulo-cuestionario{
@@ -554,14 +555,151 @@ body{
 .login-text-container a{
     text-decoration: none;
 }
-/*REDES SOCIALES*/
+
+/*NOTICIAS.HTML*/
+
+.body-news{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.body-news-title{
+    text-align: center;
+    display: inline-flexbox;
+    align-items: baseline;
+}
+
+.main-title-news{
+    color: #457B9D;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.body-sub-news{
+    width: 100%;
+    text-align: center;
+    display: inline-flexbox;
+    align-items: baseline;
+}
+
+.sub-news{
+    color: #AEAFB0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.container-news{
+    background-color: #324766;
+    border: 6px solid #1D3557;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flexbox;
+    border-style: inset;
+    border-radius: 5px;
+}
+
+.container-news-title{
+    color:#ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container-news-date{
+    color:#AEAFB0;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-right: 2rem;
+}
+
+.container-news-sub{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color:#ffffff;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.container-image-news{
+    background-image: url(img/animecon\ argentina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: content-box;
+}
+
+.container-news-text{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color:#ffffff;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
     
+.container-general-news{
+    background-color: #1D3557;
+    background-position: right;
+    border: 6px solid #324766;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: block;
+    border-style: inset;
+    border-radius: 5px;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 1rem;
+    padding-bottom: 2rem;   
+    border-top: 4px solid #1D3557;
+    background-color: #324766;
+}
+
 .social-container{
     display: flex;
     height: 15vh;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
     
 .social-container ul li{
@@ -603,17 +741,6 @@ body{
     
 .social-container ul li .facebook:hover{
     background-color: #3b5999;
-}
-    
-/*FOOTER*/
-
-footer{
-    margin-top: 4rem;
-    padding-top: 3rem;
-    padding-left: 1rem;
-    padding-bottom: 3rem;
-    border-top: 4px solid #1D3557;
-    background-color: #324766;
 }
 
 .copyright-container{
