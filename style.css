@@ -611,6 +611,12 @@ body{
     letter-spacing: 2px;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    
+}
+
 .container-news{
     background-color: #324766;
     border: 6px solid #1D3557;
@@ -667,8 +673,8 @@ body{
     background-size: contain;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 350px;
+    padding-bottom: 350px;
     padding-left: 2rem;
     padding-right: 2rem;
     box-sizing: content-box;
@@ -687,16 +693,15 @@ body{
 }
     
 .container-general-news{
-    background-color: #1D3557;
+    background-color: #ffffff;
     background-position: right;
-    border: 6px solid #324766;
+    border: 6px solid #ffffff;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 3rem;
     margin-right: 3rem;
-    display: block;
-    border-style: inset;
+    display: flexbox;
     border-radius: 5px;
+    box-sizing: content-box;
 }
 
 /*FOOTER*/
