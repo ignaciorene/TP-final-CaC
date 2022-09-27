@@ -339,8 +339,11 @@ body{
 }
 
 /*CUESTIONARIO.HTML*/
-.linea-cuestionario{
-    margin-top: 5rem;
+.main-container-title-cuestionario{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    display: inline-flexbox;
 }
 
 .titulo-cuestionario{
@@ -352,6 +355,17 @@ body{
     margin: 1.5% 0%;
     border-top: 5px solid var(--color-secundario-oscuro);
     border-bottom: 5px solid var(--color-secundario-oscuro);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.main-title-cuestionario{
+    color: #324766;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
 }
