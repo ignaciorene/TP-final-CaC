@@ -43,3 +43,20 @@ const logoButton=document.querySelector('.logo-container img');
 logoButton.addEventListener('click',()=>{
     window.location='./index.html';
 })
+
+//QUESTIONNAIRE OPTION SELECTION
+
+// const qaireOption = document.querySelectorAll(".opcion").forEach(n =>n.addEventListener('click',()=>{
+//     qaireOption[n].classList.toggle('active');
+//     }));
+
+    // function activarOpcion(){
+    //     qaireOption.classList.toggle('active');
+    // }
+    
+    // qaireOption.onclick = function (){
+    //     activarOpcion();
+    // };
+// document.querySelectorAll('.menu-link').forEach(n => n.addEventListener('click',()=>{
+//     qaireOption.classList.remove('active');
+// }));
