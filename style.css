@@ -378,6 +378,7 @@ body{
     --color-principal: #457B9D;
     --color-secundario: #324766;
     --color-secundario-oscuro: #1D3557;
+    --color-seleccion: #efa402;
 }
 
 .pregunta {
@@ -418,8 +419,8 @@ body{
     align-items: center;
     padding: 1.5%;
     margin: 0% 0.5%;
-    color:rgb(245, 245, 245);
-    background-color: var(--color-secundario);
+    color:rgb(0, 0, 0);
+    background-color: var(--color-seleccion);
     border-radius: 0.5rem;
 }
 
