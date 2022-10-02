@@ -344,6 +344,13 @@ body{
     margin-bottom: 3rem;
     text-align: center;
     display: inline-flexbox;
+    color: #457B9D;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
 }
 
 .titulo-cuestionario{
@@ -462,7 +469,13 @@ body{
     margin-bottom: 3rem;
     text-align: center;
     display: inline-flexbox;
-    align-items: baseline;
+    color: #457B9D;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
 }
 
 .formulario {
@@ -597,7 +610,6 @@ body{
 
 .body-news{
     margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 .body-news-title{
@@ -607,6 +619,10 @@ body{
 }
 
 .main-title-news{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: inline-flexbox;
     color: #457B9D;
     padding-top: 1rem;
     padding-left: 1rem;
@@ -696,8 +712,8 @@ body{
     background-size: contain;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 350px;
-    padding-bottom: 350px;
+    padding-top: 280px;
+    padding-bottom: 280px;
     padding-left: 2rem;
     padding-right: 2rem;
     box-sizing: content-box;
