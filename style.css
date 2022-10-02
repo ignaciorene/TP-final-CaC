@@ -457,16 +457,24 @@ body{
 
 /*CONTACTO.HTML*/
 
+.main-container-title-contacto {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    display: inline-flexbox;
+    align-items: baseline;
+}
+
 .formulario {
     margin-top: 3rem;
+    padding-left: 25%;
+    padding-right: 25%;
     align-items: center;
     justify-content: center;
     justify-items: center;
 }
 
 .bloque-formulario {
-    font-family: 'Bangers', cursive;
-    font-size: large;
     margin: 1rem;
     border-radius: 0.3rem;
 }
@@ -499,8 +507,9 @@ body{
 }
 
 .envio {
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 20%;
+    display: inline-block;
+    margin-bottom: 3rem;
 }
 
 .envio:hover {
