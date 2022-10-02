@@ -520,7 +520,14 @@ function giveMeMyCharacter() {
                 personajesMaximos.push(" " + clave)
             }
         });
-        alert("Sos: " + porcentajeIdentidad + personajesMaximos + ".")
+        
+        if(personajesMaximos.length>1){
+            random=Math.floor(Math.random() * personajesMaximos.length);
+            alert("Sos: " + porcentajeIdentidad + personajesMaximos[random] + ".")
+        }else{
+            alert("Sos: " + porcentajeIdentidad + personajesMaximos + ".")
+        }
+        
     }
 
     restricciones();
@@ -531,13 +538,3 @@ envio = document.getElementById("enviocuestionario");
 envio.addEventListener('click', () => {
     giveMeMyCharacter()
 })
-
-/*
-personajesElegidos=['naruto','bakugo','Anya']
-
-if (personajesElegidos.length()>1) {
-    random=Math.floor(Math.random() * personajesElegidos.length());
-    alert(personajesElegidos[random])
-}else{
-    alert(personajesElegidos[0])
-}*/
