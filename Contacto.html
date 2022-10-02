@@ -93,24 +93,34 @@
 
         <!------------------------------------NOMBRE COMPLETO------------------------------------>
         <div class="bloque-formulario">
-            <div class="elemento-formulario label">Nombre completo</div>
-            <input class="elemento-formulario" name="nombre" placeholder="Por ejemplo: Juan Pérez" size="30">
+            <div class="elemento-formulario alerta" id="alertanombre">Ingrese su nombre</div>
         </div>
-
+        <div class="bloque-formulario">
+            <div class="elemento-formulario label">Nombre completo</div>
+            <input class="elemento-formulario" id="nombrecompleto" name="nombre" placeholder="Por ejemplo: Juan Pérez"
+                size="30" required>
+        </div>
         <!------------------------------------CORREO ELECTRÓNICO------------------------------------>
         <div class="bloque-formulario">
-            <div class="elemento-formulario label">Correo electrónico</div><input class="elemento-formulario"
-                name="correo" placeholder="Por ejemplo: juan.perez123@gmail.com" size="30">
+            <div class="elemento-formulario alerta" id="alertacorreo">Ingrese un correo electrónico válido</div>
         </div>
-
+        <div class="bloque-formulario">
+            <div class="elemento-formulario label">Correo electrónico</div><input class="elemento-formulario"
+                id="correoelectronico" name="correo" placeholder="Por ejemplo: juan.perez123@gmail.com" size="30"
+                required>
+        </div>
         <!------------------------------------MENSAJE------------------------------------>
         <div class="bloque-formulario">
-            <div class="elemento-formulario label">Mensaje</div><textarea class="elemento-formulario mensaje"
-                name="mensaje" placeholder="¡Dejanos tu mensaje acá!" cols="60" rows="8"></textarea>
+            <div class="elemento-formulario alerta" id="alertamensaje">Ingrese un mensaje</div>
         </div>
-
+        <div class="bloque-formulario">
+            <div class="elemento-formulario label">Mensaje</div><textarea class="elemento-formulario mensaje"
+                id="mensajecontacto" name="mensaje" placeholder="¡Dejanos tu mensaje acá!" cols="60" rows="8"
+                required></textarea>
+        </div>
         <!------------------------------------BOTÓN DE ENVÍO------------------------------------>
-        <div class="bloque-formulario"><input class="elemento-formulario envio" type="submit" value="Enviar">
+        <div class="bloque-formulario"><input class="elemento-formulario envio" id="enviocontacto" type="submit"
+                value="Enviar">
         </div>
     </div>
     <!--------------------------------------FOOTER------------------------------------>

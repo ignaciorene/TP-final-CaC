@@ -552,6 +552,17 @@ body{
     color: #D5D5D5;
 }
 
+.alerta {
+    display: none;
+}
+
+.alerta.active {
+    display: block;
+    text-align: left;
+    color: #e4405f;
+    height: 1rem;
+}
+
 /*LOGIN.HTML*/
 .login-container{
     width: 15%;

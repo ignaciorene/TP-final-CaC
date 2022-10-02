@@ -520,21 +520,47 @@ function giveMeMyCharacter() {
                 personajesMaximos.push(" " + clave)
             }
         });
-        
-        if(personajesMaximos.length>1){
-            random=Math.floor(Math.random() * personajesMaximos.length);
+
+        if (personajesMaximos.length > 1) {
+            random = Math.floor(Math.random() * personajesMaximos.length);
             alert("Sos: " + porcentajeIdentidad + personajesMaximos[random] + ".")
-        }else{
+        } else {
             alert("Sos: " + porcentajeIdentidad + personajesMaximos + ".")
         }
-        
+
     }
 
     restricciones();
     calculoDePersonajes()
 };
 
-envio = document.getElementById("enviocuestionario");
+const envio = document.getElementById("enviocuestionario");
 envio.addEventListener('click', () => {
     giveMeMyCharacter()
-})
+});
+
+//CONTACTO
+
+function enviarContacto() {
+    nombreCompleto = document.getElementById("nombrecompleto").val();
+    correoElectronico = document.getElementById("correoelectronico").val();
+    mensajeContacto = document.getElementById("mensajecontacto").val();
+
+    if (nombreCompleto == "") {
+        document.getElementById("alertanombre").classList.toggle("active");
+    };
+    if (correoElectronico == "") {
+        document.getElementById("alertacorreo").classList.toggle("active")
+    };
+    if (mensajeContacto == "") {
+        document.getElementById("alertamensaje").classList.toggle("active");
+    } 
+    if (nombreCompleto == "" && correoElectronico == "" && mensajeContacto == ""){
+        alert("Saludos ${nombreCompleto}: ¡Muchas gracias por enviar su mensaje! Es muy valioso para nosotros.");
+    }
+};
+
+const envioContacto = document.getElementById("enviocontacto");
+envioContacto.addEventListener('click', () => {
+    enviarContacto()
+});
