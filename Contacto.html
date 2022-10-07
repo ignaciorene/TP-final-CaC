@@ -16,131 +16,54 @@
 
 <body>
     <!------------------------------------HEADER------------------------------------>
-    <header>
-        <nav class="navbar">
-            <div class="menu-container">
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="./index.html" class="menu-link">
-                            <i class="uil uil-estate"></i>
-                            <p>Home</p>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="./Noticias.html" class="menu-link">
-                            <i class="uil uil-newspaper"></i>
-                            <p>Noticias</p>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="./Cuestionario.html" class="menu-link">
-                            <i class="uil uil-clipboard-alt"></i>
-                            <p>Cuestionario</p>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="./Contacto.html" class="menu-link">
-                            <i class="uil uil-postcard"></i>
-                            <p>Contacto</p>
-                        </a>
-                    </li>
-                    <li class="menu-item user">
-                        <a href="./login.html" class="menu-link">
-                            <i class="uil uil-sign-in-alt"></i>
-                            <p>Login</p>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="./signup.html" class="menu-link">
-                            <i class="uil uil-signin"></i>
-                            <p>Sign In</p>
-                        </a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-            <div class="logo-container">
-                <img src="img/logo.png" alt="ANINEWS" width="100" height="100">
-            </div>
-            <div class="menu-search-container">
-                <div class="searchbar">
-                    <div class="searchbar-cancel-box">
-                        <i class="uil uil-times"></i>
-                    </div>
-                    <div class="searchbar-input">
-                        <input type="text" placeholder="Buscar...">
-                    </div>
-                    <div class="searchbar-box">
-                        <i class="uil uil-search"></i>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <header class="header"></header>
     <!------------------------------------TÍTULO------------------------------------>
-    <div class="main-container-title-contacto">
-        <div class="main-title">
-            <h1>Contacto</h1>
+    <div class="main-container news">
+        <div class="main-container-title">
+            <div class="main-title">
+                <h1>Contacto</h1>
+            </div>
+            <div class="main-title-line"></div>
         </div>
-    </div>
-    <!------------------------------------FORMULARIO DE CONTACTO------------------------------------>
-    <div class="formulario">
-        <form name="contactoform">
-            <!------------------------------------NOMBRE COMPLETO------------------------------------>
-            <div class="bloque-formulario nombre">
-                <div class="elemento-formulario alerta" id="alertanombre">Ingrese su nombre</div>
-            </div>
-            <div class="bloque-formulario">
-                <div class="elemento-formulario label">Nombre completo</div>
-                <input class="elemento-formulario" id="nombrecompleto" name="nombre"
-                    placeholder="Por ejemplo: Juan Pérez" size="30" required minlength="1">
-            </div>
-            <!------------------------------------CORREO ELECTRÓNICO------------------------------------>
-            <div class="bloque-formulario correo">
-                <div class="elemento-formulario alerta" id="alertacorreo">Ingrese un correo electrónico válido</div>
-            </div>
-            <div class="bloque-formulario">
-                <div class="elemento-formulario label">Correo electrónico</div><input class="elemento-formulario"
-                    id="correoelectronico" name="correo" placeholder="Por ejemplo: juan.perez123@gmail.com" size="30"
-                    required type="email">
-            </div>
-            <!------------------------------------MENSAJE------------------------------------>
-            <div class="bloque-formulario mensaje">
-                <div class="elemento-formulario alerta" id="alertamensaje">Ingrese un mensaje</div>
-            </div>
-            <div class="bloque-formulario">
-                <div class="elemento-formulario label">Mensaje</div><textarea class="elemento-formulario mensaje"
-                    id="mensajecontacto" name="mensaje" placeholder="¡Dejanos tu mensaje acá!" cols="60" rows="8"
-                    required minlength="1"></textarea>
-            </div>
-            <!------------------------------------BOTÓN DE ENVÍO------------------------------------>
-            <div class="bloque-formulario"><input class="elemento-formulario envio" id="enviocontacto" type="submit"
-                    value="Enviar" onclick="enviarContacto()">
-            </div>
-        </form>
+        <!------------------------------------FORMULARIO DE CONTACTO------------------------------------>
+        <div class="formulario">
+            <form name="contactoform">
+                <!------------------------------------NOMBRE COMPLETO------------------------------------>
+                <div class="bloque-formulario nombre">
+                    <div class="elemento-formulario alerta" id="alertanombre">Ingrese su nombre</div>
+                </div>
+                <div class="bloque-formulario">
+                    <div class="elemento-formulario label">Nombre completo</div>
+                    <input class="elemento-formulario" id="nombrecompleto" name="nombre"
+                        placeholder="Por ejemplo: Juan Pérez" size="30" required minlength="1">
+                </div>
+                <!------------------------------------CORREO ELECTRÓNICO------------------------------------>
+                <div class="bloque-formulario correo">
+                    <div class="elemento-formulario alerta" id="alertacorreo">Ingrese un correo electrónico válido</div>
+                </div>
+                <div class="bloque-formulario">
+                    <div class="elemento-formulario label">Correo electrónico</div><input class="elemento-formulario"
+                        id="correoelectronico" name="correo" placeholder="Por ejemplo: juan.perez123@gmail.com"
+                        size="30" required type="email">
+                </div>
+                <!------------------------------------MENSAJE------------------------------------>
+                <div class="bloque-formulario mensaje">
+                    <div class="elemento-formulario alerta" id="alertamensaje">Ingrese un mensaje</div>
+                </div>
+                <div class="bloque-formulario">
+                    <div class="elemento-formulario label">Mensaje</div><textarea class="elemento-formulario mensaje"
+                        id="mensajecontacto" name="mensaje" placeholder="¡Dejanos tu mensaje acá!" cols="60" rows="8"
+                        required minlength="1"></textarea>
+                </div>
+                <!------------------------------------BOTÓN DE ENVÍO------------------------------------>
+                <div class="bloque-formulario"><input class="elemento-formulario envio" id="enviocontacto" type="submit"
+                        value="Enviar" onclick="enviarContacto()">
+                </div>
+            </form>
+        </div>
     </div>
     <!--------------------------------------FOOTER------------------------------------>
-    <footer>
-
-        <div class="social-container">
-            <ul>
-                <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="copyright-container">
-            <p>© 2022 Aninews.com - Todos los derechos reservados.</p><br>
-            <p>Respeta el trabajo de nuestros redactores. Si quieres copiar o compartir nuestro contenido, puedes
-                hacerlo siempre que reconozcas la autoría del contenido.</p>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
     <!-----------------------------------------SCRIPTS--------------------------------------->
     <script src="main.js"></script>
 </body>

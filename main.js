@@ -1,3 +1,90 @@
+//HEADER UNIFICADO
+headers = document.getElementsByClassName("header")
+for (i = 0; i < headers.length; i++) {
+    headers[i].innerHTML = `        <nav class="navbar">
+    <div class="menu-container">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="./index.html" class="menu-link">
+                    <i class="uil uil-estate"></i>
+                    <p>Home</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./Noticias.html" class="menu-link">
+                    <i class="uil uil-newspaper"></i>
+                    <p>Noticias</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./Cuestionario.html" class="menu-link">
+                    <i class="uil uil-clipboard-alt"></i>
+                    <p>Cuestionario</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./Contacto.html" class="menu-link">
+                    <i class="uil uil-postcard"></i>
+                    <p>Contacto</p>
+                </a>
+            </li>
+            <li class="menu-item user">
+                <a href="./login.html" class="menu-link">
+                    <i class="uil uil-sign-in-alt"></i>
+                    <p>Login</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./signup.html" class="menu-link">
+                    <i class="uil uil-signin"></i>
+                    <p>Sign Up</p>
+                </a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="logo-container">
+        <img src="img/logo.png" alt="ANINEWS" width="100" height="100">
+    </div>
+    <div class="menu-search-container">
+        <div class="searchbar">
+            <div class="searchbar-cancel-box">
+                <i class="uil uil-times"></i>
+            </div>
+            <div class="searchbar-input">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <div class="searchbar-box">
+                <i class="uil uil-search"></i>
+            </div>
+        </div>
+    </div>
+</nav>`
+};
+
+//FOOTER UNIFICADO
+footers = document.getElementsByClassName("footer")
+for (i = 0; i < footers.length; i++) {
+    footers[i].innerHTML = `
+    <div class="social-container">
+        <ul>
+            <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="copyright-container">
+        <p>© 2022 Aninews.com - Todos los derechos reservados.</p><br>
+        <p>Respeta el trabajo de nuestros redactores. Si quieres copiar o compartir nuestro contenido, puedes
+            hacerlo siempre que reconozcas la autoría del contenido.</p>
+    </div>`
+};
+
 // MENU ANIMATIONS
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
@@ -62,113 +149,181 @@ p5opcionelegida = 0;
 
 qaireOption1.forEach(n => n.addEventListener('click', () => {
     if (n.id == "P1OA") {
-        p1opcionelegida = "P1OA";
-        document.getElementById("P1OB").classList.remove('active');
-        document.getElementById("P1OC").classList.remove('active');
+        if (p1opcionelegida == "P1OA") {
+            p1opcionelegida = 0;
+        } else {
+            p1opcionelegida = "P1OA";
+            document.getElementById("P1OB").classList.remove('active');
+            document.getElementById("P1OC").classList.remove('active');
+        }
     };
     if (n.id == "P1OB") {
-        p1opcionelegida = "P1OB";
-        document.getElementById("P1OA").classList.remove('active');
-        document.getElementById("P1OC").classList.remove('active');
+        if (p1opcionelegida == "P1OB") {
+            p1opcionelegida = 0;
+        } else {
+            p1opcionelegida = "P1OB";
+            document.getElementById("P1OA").classList.remove('active');
+            document.getElementById("P1OC").classList.remove('active');
+        }
     };
     if (n.id == "P1OC") {
-        p1opcionelegida = "P1OC";
-        document.getElementById("P1OA").classList.remove('active');
-        document.getElementById("P1OB").classList.remove('active');
+        if (p1opcionelegida == "P1OC") {
+            p1opcionelegida = 0;
+        } else {
+            p1opcionelegida = "P1OC";
+            document.getElementById("P1OA").classList.remove('active');
+            document.getElementById("P1OB").classList.remove('active');
+        }
     };
     n.classList.toggle('active');
 }));
 
 qaireOption2.forEach(n => n.addEventListener('click', () => {
     if (n.id == "P2OA") {
-        p2opcionelegida = "P2OA";
-        document.getElementById("P2OB").classList.remove('active');
-        document.getElementById("P2OC").classList.remove('active');
+        if (p2opcionelegida == "P2OA") {
+            p2opcionelegida = 0;
+        } else {
+            p2opcionelegida = "P2OA";
+            document.getElementById("P2OB").classList.remove('active');
+            document.getElementById("P2OC").classList.remove('active');
+        }
     };
     if (n.id == "P2OB") {
-        p2opcionelegida = "P2OB";
-        document.getElementById("P2OA").classList.remove('active');
-        document.getElementById("P2OC").classList.remove('active');
+        if (p2opcionelegida == "P2OB") {
+            p2opcionelegida = 0;
+        } else {
+            p2opcionelegida = "P2OB";
+            document.getElementById("P2OA").classList.remove('active');
+            document.getElementById("P2OC").classList.remove('active');
+        }
     };
     if (n.id == "P2OC") {
-        p2opcionelegida = "P2OC";
-        document.getElementById("P2OA").classList.remove('active');
-        document.getElementById("P2OB").classList.remove('active');
+        if (p2opcionelegida == "P2OC") {
+            p2opcionelegida = 0;
+        } else {
+            p2opcionelegida = "P2OC";
+            document.getElementById("P2OA").classList.remove('active');
+            document.getElementById("P2OB").classList.remove('active');
+        }
     };
     n.classList.toggle('active');
 }));
 
 qaireOption3.forEach(n => n.addEventListener('click', () => {
     if (n.id == "P3OA") {
-        p3opcionelegida = "P3OA";
-        document.getElementById("P3OB").classList.remove('active');
-        document.getElementById("P3OC").classList.remove('active');
+        if (p3opcionelegida == "P3OA") {
+            p3opcionelegida = 0;
+        } else {
+            p3opcionelegida = "P3OA";
+            document.getElementById("P3OB").classList.remove('active');
+            document.getElementById("P3OC").classList.remove('active');
+        }
     };
     if (n.id == "P3OB") {
-        p3opcionelegida = "P3OB";
-        document.getElementById("P3OA").classList.remove('active');
-        document.getElementById("P3OC").classList.remove('active');
+        if (p3opcionelegida == "P3OB") {
+            p3opcionelegida = 0;
+        } else {
+            p3opcionelegida = "P3OB";
+            document.getElementById("P3OA").classList.remove('active');
+            document.getElementById("P3OC").classList.remove('active');
+        }
     };
     if (n.id == "P3OC") {
-        p3opcionelegida = "P3OC";
-        document.getElementById("P3OA").classList.remove('active');
-        document.getElementById("P3OB").classList.remove('active');
+        if (p3opcionelegida == "P3OC") {
+            p3opcionelegida = 0;
+        } else {
+            p3opcionelegida = "P3OC";
+            document.getElementById("P3OA").classList.remove('active');
+            document.getElementById("P3OB").classList.remove('active');
+        }
     };
     n.classList.toggle('active');
 }));
 
 qaireOption4.forEach(n => n.addEventListener('click', () => {
     if (n.id == "P4OA") {
-        p4opcionelegida = "P4OA";
-        document.getElementById("P4OB").classList.remove('active');
-        document.getElementById("P4OC").classList.remove('active');
-        document.getElementById("P4OD").classList.remove('active');
+        if (p4opcionelegida == "P4OA") {
+            p4opcionelegida = 0;
+        } else {
+            p4opcionelegida = "P4OA";
+            document.getElementById("P4OB").classList.remove('active');
+            document.getElementById("P4OC").classList.remove('active');
+            document.getElementById("P4OD").classList.remove('active');
+        }
     };
     if (n.id == "P4OB") {
-        p4opcionelegida = "P4OB";
-        document.getElementById("P4OA").classList.remove('active');
-        document.getElementById("P4OC").classList.remove('active');
-        document.getElementById("P4OD").classList.remove('active');
+        if (p4opcionelegida == "P4OB") {
+            p4opcionelegida = 0;
+        } else {
+            p4opcionelegida = "P4OB";
+            document.getElementById("P4OA").classList.remove('active');
+            document.getElementById("P4OC").classList.remove('active');
+            document.getElementById("P4OD").classList.remove('active');
+        }
     };
     if (n.id == "P4OC") {
-        p4opcionelegida = "P4OC";
-        document.getElementById("P4OA").classList.remove('active');
-        document.getElementById("P4OB").classList.remove('active');
-        document.getElementById("P4OD").classList.remove('active');
+        if (p4opcionelegida == "P4OC") {
+            p4opcionelegida = 0;
+        } else {
+            p4opcionelegida = "P4OC";
+            document.getElementById("P4OA").classList.remove('active');
+            document.getElementById("P4OB").classList.remove('active');
+            document.getElementById("P4OD").classList.remove('active');
+        }
     };
     if (n.id == "P4OD") {
-        p4opcionelegida = "P4OD";
-        document.getElementById("P4OA").classList.remove('active');
-        document.getElementById("P4OB").classList.remove('active');
-        document.getElementById("P4OC").classList.remove('active');
+        if (p4opcionelegida == "P4OD") {
+            p4opcionelegida = 0;
+        } else {
+            p4opcionelegida = "P4OD";
+            document.getElementById("P4OA").classList.remove('active');
+            document.getElementById("P4OB").classList.remove('active');
+            document.getElementById("P4OC").classList.remove('active');
+        }
     };
     n.classList.toggle('active');
 }));
 
 qaireOption5.forEach(n => n.addEventListener('click', () => {
     if (n.id == "P5OA") {
-        p5opcionelegida = "P5OA";
-        document.getElementById("P5OB").classList.remove('active');
-        document.getElementById("P5OC").classList.remove('active');
-        document.getElementById("P5OD").classList.remove('active');
+        if (p5opcionelegida == "P5OA") {
+            p5opcionelegida = 0;
+        } else {
+            p5opcionelegida = "P5OA";
+            document.getElementById("P5OB").classList.remove('active');
+            document.getElementById("P5OC").classList.remove('active');
+            document.getElementById("P5OD").classList.remove('active');
+        }
     };
     if (n.id == "P5OB") {
-        p5opcionelegida = "P5OB";
-        document.getElementById("P5OA").classList.remove('active');
-        document.getElementById("P5OC").classList.remove('active');
-        document.getElementById("P5OD").classList.remove('active');
+        if (p5opcionelegida == "P5OB") {
+            p5opcionelegida = 0;
+        } else {
+            p5opcionelegida = "P5OB";
+            document.getElementById("P5OA").classList.remove('active');
+            document.getElementById("P5OC").classList.remove('active');
+            document.getElementById("P5OD").classList.remove('active');
+        }
     };
     if (n.id == "P5OC") {
-        p5opcionelegida = "P5OC";
-        document.getElementById("P5OA").classList.remove('active');
-        document.getElementById("P5OB").classList.remove('active');
-        document.getElementById("P5OD").classList.remove('active');
+        if (p5opcionelegida == "P5OC") {
+            p5opcionelegida = 0;
+        } else {
+            p5opcionelegida = "P5OC";
+            document.getElementById("P5OA").classList.remove('active');
+            document.getElementById("P5OB").classList.remove('active');
+            document.getElementById("P5OD").classList.remove('active');
+        }
     };
     if (n.id == "P5OD") {
-        p5opcionelegida = "P5OD";
-        document.getElementById("P5OA").classList.remove('active');
-        document.getElementById("P5OB").classList.remove('active');
-        document.getElementById("P5OC").classList.remove('active');
+        if (p5opcionelegida == "P5OD") {
+            p5opcionelegida = 0;
+        } else {
+            p5opcionelegida = "P5OD";
+            document.getElementById("P5OA").classList.remove('active');
+            document.getElementById("P5OB").classList.remove('active');
+            document.getElementById("P5OC").classList.remove('active');
+        }
     };
     n.classList.toggle('active');
 }));
@@ -557,6 +712,6 @@ function enviarContacto() {
         document.getElementById("alertamensaje").classList = "elemento-formulario alerta"
     }
     if (nombreCompleto.length != 0 && /\w+@\w+/.test(correoElectronico) && mensajeContacto.length != 0) {
-        alert("Saludos ${nombreCompleto}: ¡Muchas gracias por enviar su mensaje! Es muy valioso para nosotros.");
+        alert(`Saludos ${nombreCompleto}: ¡Muchas gracias por enviar su mensaje! Es muy valioso para nosotros.`);
     }
 };
