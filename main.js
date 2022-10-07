@@ -534,33 +534,29 @@ function giveMeMyCharacter() {
     calculoDePersonajes()
 };
 
-const envio = document.getElementById("enviocuestionario");
-envio.addEventListener('click', () => {
-    giveMeMyCharacter()
-});
-
 //CONTACTO
 
 function enviarContacto() {
-    nombreCompleto = document.getElementById("nombrecompleto").val();
-    correoElectronico = document.getElementById("correoelectronico").val();
-    mensajeContacto = document.getElementById("mensajecontacto").val();
+    nombreCompleto = document.contactoform.nombre.value;
+    correoElectronico = document.contactoform.correo.value;
+    mensajeContacto = document.contactoform.mensaje.value;
 
-    if (nombreCompleto == "") {
-        document.getElementById("alertanombre").classList.toggle("active");
-    };
-    if (correoElectronico == "") {
-        document.getElementById("alertacorreo").classList.toggle("active")
-    };
-    if (mensajeContacto == "") {
-        document.getElementById("alertamensaje").classList.toggle("active");
-    } 
-    if (nombreCompleto == "" && correoElectronico == "" && mensajeContacto == ""){
+    if (nombreCompleto.length == 0) {
+        document.getElementById("alertanombre").classList = "elemento-formulario alerta active";
+    } else {
+        document.getElementById("alertanombre").classList = "elemento-formulario alerta"
+    }
+    if (/\w+@\w+/.test(correoElectronico)) {
+        document.getElementById("alertacorreo").classList = "elemento-formulario alerta";
+    } else {
+        document.getElementById("alertacorreo").classList = "elemento-formulario alerta active"
+    }
+    if (mensajeContacto.length == 0) {
+        document.getElementById("alertamensaje").classList = "elemento-formulario alerta active";
+    } else {
+        document.getElementById("alertamensaje").classList = "elemento-formulario alerta"
+    }
+    if (nombreCompleto.length != 0 && /\w+@\w+/.test(correoElectronico) && mensajeContacto.length != 0) {
         alert("Saludos ${nombreCompleto}: ¡Muchas gracias por enviar su mensaje! Es muy valioso para nosotros.");
     }
 };
-
-const envioContacto = document.getElementById("enviocontacto");
-envioContacto.addEventListener('click', () => {
-    enviarContacto()
-});
