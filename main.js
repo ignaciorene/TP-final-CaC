@@ -285,9 +285,30 @@ document.querySelectorAll('.carousel-container').forEach(carousel =>{
         })
     });
 
+    
     //Selecciono el primer item al cargar la pagina
     items[0].classList.add('active');
     buttons[0].classList.add('active');
+    
+    
+    let itemIndex=0;
+    changeItem();
+
+    function changeItem(){
+        itemIndex++;
+        if(itemIndex>items.length){
+            itemIndex=1;
+        }
+
+        //deseleccionar items
+        items.forEach(item => item.classList.remove('active'));
+        buttons.forEach(button => button.classList.remove('active'));
+
+        //seleccionar la imagen correcta por el numero de boton
+        items[itemIndex-1].classList.add('active');
+        buttons[itemIndex-1].classList.add('active');
+        setTimeout(changeItem,2000)
+    }
 });
 
 //QUESTIONNAIRE CHARACTERS
