@@ -1,3 +1,86 @@
+//HEADER y FOOTER
+document.getElementById('header').innerHTML=`
+<nav class="navbar">
+<div class="menu-container">
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="./index.html" class="menu-link">
+                <i class="uil uil-estate"></i>
+                <p>Home</p>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="./Noticias.html" class="menu-link">
+                <i class="uil uil-newspaper"></i>
+                <p>Noticias</p>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="./Cuestionario.html" class="menu-link">
+                <i class="uil uil-clipboard-alt"></i>
+                <p>Cuestionario</p>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="./Contacto.html" class="menu-link">
+                <i class="uil uil-postcard"></i>
+                <p>Contacto</p>
+            </a>
+        </li>
+        <li class="menu-item user">
+            <a href="./login.html" class="menu-link">
+                <i class="uil uil-sign-in-alt"></i>
+                <p>Login</p>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="./signup.html" class="menu-link">
+                <i class="uil uil-signin"></i>
+                <p>Sign In</p>
+            </a>
+        </li>
+    </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</div>
+<div class="logo-container">
+    <img src="img/logo.png" alt="ANINEWS" width="100" height="100">
+</div>
+<div class="menu-search-container">
+    <div class="searchbar">
+        <div class="searchbar-cancel-box">
+            <i class="uil uil-times"></i>
+        </div>
+        <div class="searchbar-input">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <div class="searchbar-box">
+            <i class="uil uil-search"></i>
+        </div>
+    </div>
+</div>
+</nav>
+`
+
+document.getElementById('footer').innerHTML=`
+<div class="social-container">
+    <ul>
+        <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+    </ul>
+    </div>
+
+    <div class="copyright-container">
+    <p>© 2022 Aninews.com - Todos los derechos reservados.</p><br>
+    <p>Respeta el trabajo de nuestros redactores. Si quieres copiar o compartir nuestro contenido, puedes
+        hacerlo siempre que reconozcas la autoría del contenido.</p>
+</div>
+`
+
 // MENU ANIMATIONS
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".menu");
@@ -172,6 +255,40 @@ qaireOption5.forEach(n => n.addEventListener('click', () => {
     };
     n.classList.toggle('active');
 }));
+
+//CAROUSEL
+document.querySelectorAll('.carousel-container').forEach(carousel =>{
+    const items = document.querySelectorAll('.carousel-item');
+    const buttonsHtml=Array.from(items, ()=>{
+        return `<span class="carousel-button"></span>`;
+    });
+
+    //agrega botones abajo
+    carousel.insertAdjacentHTML('beforeend',`
+    <div class="carousel-nav">
+        ${ buttonsHtml.join("") }
+    </div>
+    `);
+
+    const buttons=carousel.querySelectorAll('.carousel-button');
+
+    //cuando hago click en un boton
+    buttons.forEach((button, i)=>{
+        button.addEventListener('click', () =>{
+            //deseleccionar items
+            items.forEach(item => item.classList.remove('active'));
+            buttons.forEach(button => button.classList.remove('active'));
+
+            //seleccionar la imagen correcta por el numero de boton
+            items[i].classList.add('active');
+            button.classList.add('active');
+        })
+    });
+
+    //Selecciono el primer item al cargar la pagina
+    items[0].classList.add('active');
+    buttons[0].classList.add('active');
+});
 
 //QUESTIONNAIRE CHARACTERS
 function giveMeMyCharacter() {

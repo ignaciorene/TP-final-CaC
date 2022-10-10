@@ -39,6 +39,7 @@ header{
     width: 33%;
     text-align: center;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .menu.active{
@@ -217,6 +218,55 @@ body{
     cursor: pointer;
     background-color: #1D3557;
     border: 1px solid #324766;
+}
+
+/*CAROUSEL*/
+.carousel-container{
+    position: relative;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 30rem;
+    display: none;
+    cursor: pointer;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item.active{
+    display: block;
+}
+
+.carousel-nav{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel-button{
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    background-color: #324766;
+    border-radius: 50%;
+    margin: 0 0.5rem 1rem 0;
+    cursor: pointer;
+}
+
+.carousel-button:hover{
+    background-color: #1D3557;
+}
+
+.carousel-button.active{
+    background-color: #1D3557;
 }
 
 /*NOTICIAS PAGINA PRINCIPAL*/
