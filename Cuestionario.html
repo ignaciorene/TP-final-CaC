@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/e8cfd1e329.js" crossorigin="anonymous"></script>
     <title>¡Contestá el cuestionario y descubrí qué personaje de anime sos!</title>
 </head>
+
 <body>
     <!------------------------------------HEADER------------------------------------>
     <header id="header"></header>
@@ -34,7 +35,7 @@
             respondiendo a las siguientes preguntas:</h1>
 
         <!------------------------------------PREGUNTA 1------------------------------------>
-        <div class="bloquepregunta" id="primer-bloque-pregunta">
+        <div class="bloquepregunta" id="bloque-pregunta-1">
             <h1 class="pregunta">Pregunta 1: ¿Qué preferís hacer en tu tiempo libre?</h1>
             <div class="bloqueopciones">
                 <div class="opcion pregunta1" id="P1OA">
@@ -65,7 +66,7 @@
         </div>
 
         <!------------------------------------PREGUNTA 2------------------------------------>
-        <div class="bloquepregunta">
+        <div class="bloquepregunta" id="bloque-pregunta-2">
             <h1 class="pregunta">Pregunta 2: En una batalla, ¿qué recurso te parece más importante?</h1>
             <div class="bloqueopciones">
                 <div class="opcion pregunta2" id="P2OA">
@@ -95,7 +96,7 @@
         </div>
 
         <!------------------------------------PREGUNTA 3------------------------------------>
-        <div class="bloquepregunta">
+        <div class="bloquepregunta" id="bloque-pregunta-3">
             <h1 class="pregunta">Pregunta 3: ¿Qué rol asumirías dentro de un equipo?</h1>
             <div class="bloqueopciones">
                 <div class="opcion pregunta3" id="P3OA">
@@ -126,7 +127,7 @@
         </div>
 
         <!------------------------------------PREGUNTA 4------------------------------------>
-        <div class="bloquepregunta">
+        <div class="bloquepregunta" id="bloque-pregunta-4">
             <h1 class="pregunta">Pregunta 4: ¿Qué destreza te parece más importante en un héroe?</h1>
             <div class="bloqueopciones">
                 <div class="opcion pregunta4" id="P4OA">
@@ -165,7 +166,7 @@
         </div>
 
         <!------------------------------------PREGUNTA 5------------------------------------>
-        <div class="bloquepregunta">
+        <div class="bloquepregunta" id="bloque-pregunta-5">
             <h1 class="pregunta">Pregunta 5: ¿Cuáles de estos colores te representan mejor?</h1>
             <div class="bloqueopciones">
                 <div class="opcion pregunta5" id="P5OA">
@@ -202,6 +203,18 @@
                 </div>
             </div>
         </div>
+        <!------------------------------------POPUP DE RESULTADO------------------------------------>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>TU RESULTADO ES:</h3>
+                <h4 id="nombreDePersonaje"></h4>
+                <div id='contenedorPersonaje'>
+                    <div id="descripcionPersonaje"></div>
+                </div>
+                <input type="submit" class="btn-submit" value="¡Qué bien!">
+            </div>
+        </div>
         <!------------------------------------BOTÓN DE ENVÍO------------------------------------>
         <div class="bloque-formulario"><input class="boton-formulario" id="enviocuestionario" type="submit"
                 value="Enviar" onclick="giveMeMyCharacter()">
@@ -212,4 +225,5 @@
     <!------------------------------------SCRIPTS--------------------------------------->
     <script src="main.js"></script>
 </body>
+
 </html>
