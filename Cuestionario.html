@@ -206,13 +206,13 @@
         <!------------------------------------POPUP DE RESULTADO------------------------------------>
         <div class="overlay" id="overlay">
             <div class="popup" id="popup">
-                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup" onclick="cerrarPopup()"><i class="fas fa-times"></i></a>
                 <h3>TU RESULTADO ES:</h3>
                 <h4 id="nombreDePersonaje"></h4>
                 <div id='contenedorPersonaje'>
                     <div id="descripcionPersonaje"></div>
                 </div>
-                <input type="submit" class="btn-submit" value="¡Qué bien!">
+                <input type="submit" class="btn-submit boton-formulario" value="¡Qué bien!" onclick="completarCuestionario()">
             </div>
         </div>
         <!------------------------------------BOTÓN DE ENVÍO------------------------------------>

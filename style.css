@@ -513,8 +513,8 @@ body{
 }
 
 .boton-formulario{
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 10rem;
 }
 
@@ -563,7 +563,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	padding: 20px;
 	text-align: center;
-	width: 600px;
+	width: 35rem;
 	
 	transition: .3s ease all;
 	transform: scale(0.7);
@@ -593,7 +593,7 @@ body{
 .popup h4 {
 	font-size: 26px;
 	font-weight: 300;
-	margin-bottom: 40px;
+	margin-bottom: 1rem;
 	opacity: 0;
 }
 
@@ -629,13 +629,29 @@ body{
 	background: rgba(94,125,227, .9);
 }
 
+img#imagen\.personaje {
+    box-sizing: border-box;
+    margin: 1rem 2rem 2rem;
+    border: 3px solid black;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+    vertical-align: top;
+    width: 90%;
+    transition: .3s ease all;
+}
+
+div#descripcion\.personaje {
+    padding: 0rem 1rem 1rem;
+    align-items: center;
+}
+
 /* ------------------------- */
 /* ANIMACIONES */
 /* ------------------------- */
 .popup.active {	transform: scale(1); opacity: 1; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
-.popup.active .contenedor-personaje { animation: entradaInputs 1s linear 1s forwards; }
+.popup.active #contenedorPersonaje { animation: entradaSubtitulo .8s ease .5s forwards; }
 
 @keyframes entradaTitulo {
 	from {

@@ -757,133 +757,136 @@ function giveMeMyCharacter() {
 
     function mostrarResultado(personaje, porcentaje) {
 
+        personaje = String(personaje).trim()
         //Verificación del personaje para el resultado
-        alert(personaje);
-        console.log(personaje);
+
         if (personaje == 'Naruto Uzumaki') {
             HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki.png' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`;
         } else if (personaje == "Sakura Haruno") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.SakuraHaruno' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.SakuraHaruno' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje">Sakura es una kunoichi de la Aldea Oculta de la Hoja. Suele tener mal carácter, pero se preocupa mucho por el bienestar de las personas que quiere. Esta personalidad la llevó a desarrollar sus habilidades curativas y a convertirse en una de las mejores ninjas médicas. Sin embargo, en caso de necesitarlo también posee la capacidad de concentrar el chakra en sus puños para ganar fuerza adicional.</div>`
         } else if (personaje == "Sasuke Uchiha") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\imagen.pregunta5.opcionD' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Sasuke es un miembro del clan Uchiha, alguna vez uno de los clanes ninja más fuertes de la Aldea Oculta de la Hoja. Sin embargo, su historia es un tanto oscura, ya que su meta es volverse lo suficientemente poderoso como para vengarse de su hermano mayor por haber asesinado al resto de su clan, y su determinación lo llevará a ganar poder cueste lo que cueste.</div>`
         } else if (personaje == "Monkey D. Luffy") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.MonkeyD.Luffy' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">En una era de piratas donde todas las personas zarpan al mar en búsqueda de fama y riquezas, Luffy zarpa con el único objetivo de convertirse en el rey de los piratas. Aunque zarpó en solitario, en el transcurso de su viaje se cruzará con personas que lo seguirán y se convertirán en miembros de su banda pirata, los "Sombrero de Paja". Luffy no es una persona muy inteligente ni con mucho tacto, pero tiene un fuerte sentido de la justicia. Además, es usuario de la fruta Gomu Gomu, una fruta legendaria que le permite estirarse como una goma, pero a cambio le quita su capacidad para nadar.</div>`
         } else if (personaje == "Zoro Roronoa") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.ZoroRoronoa' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">El Cazador de Piratas Roronoa Zoro es un combatiente de la banda pirata "Sombrero de Paja" que se une a la tripulación luego de ser rescatado por Luffy de las manos de la Marina, una institución supuestamente creada con el objetivo de eliminar la creciente pirateria en la nueva era pirata. Aunque hasta entonces se había dedicado a ser cazarrecompensas, luego de la petición de Luffy Zoro acepta unirse con la condición de que no obstaculice su objetivo principal: el de convertirse en el mejor espadachín del mundo. Su técnica especial se llama Santoryu, o "estilo de tres espadas", porque literalmente utiliza una espada en cada mano y una tercera en la boca.</div>`
         } else if (personaje == "Nami") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Nami' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Apodada "Gata Ladrona", Nami es la navegante de la banda pirata "Sombrero de Paja". Si bien es un tanto cobarde, ella es capaz de arriesgarse por las personas que más valora. Su poder reside en su conocimiento sobre los fenómenos climáticos y en su capacidad de manipular ciertas condiciones climáticas con su arma personalizada, el "Clima-Tact".</div>`
         } else if (personaje == "Anya Forger") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.AnyaForger' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Anya es una niña pequeña con una mente curiosa por demás y fiel amante de los animes de espías y el maní. Ella llega a un orfanato luego de escapar de una organización secreta que llevaba a cabo experimentos en niños, de los que heredó el poder de leer mentes. Por si fuera poco drama, Anya es adoptada por Loid Forger, el mejor espía de Westalis, con el objetivo de cumplir una misión para conservar la paz mundial. Sus sueños incluyen vivir en un castillo, tener una pistola que no haga ruido, y ser la heroína que salva el día.</div>`
         } else if (personaje == "Loid Forger") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Yor Forger") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Izuku Midoriya") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Ochaco Uraraka") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Bakugou Katsuki") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Senku Ishigami") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Kohaku") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Chrome") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Gon Freecs") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Killua Zoldyck") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Kurapika") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Tanjiro Kamada") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Zenitsu Agatsuma") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Inosuke Hashibira") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Naofumi Iwatani") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Raphtalia") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Filo") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Yuji Itadori") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Megumi Fushiguro") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Nobara Kugisaki") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Eren Jaeger") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Mikasa Ackerman") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Armin Arlert") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Natsu Dragneel") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Lucy Heartfilia") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Gray Fullbuster") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Asta") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Yuno") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         } else if (personaje == "Noelle Silva") {
-            document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje"></div>`
         };
 
         document.getElementById('nombreDePersonaje').innerHTML = `Sos ${porcentaje} ${personaje}`;
-        document.getElementById('contenedorPersonaje').innerHTML = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki.png' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`;
+        document.getElementById('contenedorPersonaje').innerHTML = HTMLInterno
         overlay.classList.add('active');
         popup.classList.add('active');
     };
-
-    btnCerrarPopup.addEventListener('click', function (e) {
-        e.preventDefault();
-        overlay.classList.remove('active');
-        popup.classList.remove('active');
-    });
 };
 
+function cerrarPopup() {
+    e.preventDefault();
+    overlay.classList.remove('active');
+    popup.classList.remove('active');
+};
+
+function completarCuestionario() {
+    overlay.classList.remove('active');
+    popup.classList.remove('active');
+};
 //CONTACTO
 
 function enviarContacto() {
