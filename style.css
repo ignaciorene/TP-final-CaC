@@ -564,7 +564,6 @@ body{
 	padding: 20px;
 	text-align: center;
 	width: 35rem;
-	
 	transition: .3s ease all;
 	transform: scale(0.7);
 	opacity: 0;
@@ -637,12 +636,14 @@ img#imagen\.personaje {
 	border-radius: 3px;
     vertical-align: top;
     width: 90%;
-    transition: .3s ease all;
+    opacity: 0;
 }
 
 div#descripcion\.personaje {
     padding: 0rem 1rem 1rem;
+    font-size: 20px;
     align-items: center;
+    opacity: 0;
 }
 
 /* ------------------------- */
@@ -651,7 +652,8 @@ div#descripcion\.personaje {
 .popup.active {	transform: scale(1); opacity: 1; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
-.popup.active #contenedorPersonaje { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active #descripcion\.personaje { animation: entradaInputs .8s ease .5s forwards; }
+.popup.active #imagen\.personaje { animation: entradaInputs .8s ease .5s forwards; }
 
 @keyframes entradaTitulo {
 	from {

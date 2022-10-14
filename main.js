@@ -386,27 +386,27 @@ function giveMeMyCharacter() {
 
         //RESTRICCIONES
         if (p1opcionelegida == 0) {
-            document.getElementById("bloque-pregunta-1").focus();
+            // document.getElementById("bloque-pregunta-1").focus();
             alert("Por favor, seleccione una opción para la pregunta 1.");
             return 0
         }
         else if (p2opcionelegida == 0) {
-            document.getElementById("bloque-pregunta-2").focus();
+            // document.getElementById("bloque-pregunta-2").focus();
             alert("Por favor, seleccione una opción para la pregunta 2.")
             return 0
         }
         else if (p3opcionelegida == 0) {
-            document.getElementById("bloque-pregunta-3").focus();
+            // document.getElementById("bloque-pregunta-3").focus();
             alert("Por favor, seleccione una opción para la pregunta 3.")
             return 0
         }
         else if (p4opcionelegida == 0) {
-            document.getElementById("bloque-pregunta-4").focus();
+            // document.getElementById("bloque-pregunta-4").focus();
             alert("Por favor, seleccione una opción para la pregunta 4.")
             return 0
         }
         else if (p5opcionelegida == 0) {
-            document.getElementById("bloque-pregunta-5").focus();
+            // document.getElementById("bloque-pregunta-5").focus();
             alert("Por favor, seleccione una opción para la pregunta 5.")
             return 0
         }
@@ -761,115 +761,116 @@ function giveMeMyCharacter() {
         //Verificación del personaje para el resultado
 
         if (personaje == 'Naruto Uzumaki') {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki.png' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja que fue en principio discriminado por sus pares por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el jefe de la aldea, el Hokage, lo llevará a desarrollar diferentes capacidades, entre ellas la de aprovechar el chakra de la naturaleza y la de tomar prestado el poder de la bestia legendaria.</div>`;
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Naruto es un ninja de la Aldea Oculta de la Hoja. Fue marginado en un principio por tener sellado en su interior a una bestia legendaria, el Zorro de Nueve Colas. Sin embargo, su determinación por convertirse en el Hokage lo llevará a desarrollar sus capacidades para aprovechar el chakra natural y el de la bestia legendaria en su interior.</div>`;
         } else if (personaje == "Sakura Haruno") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.SakuraHaruno' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Sakura es una kunoichi de la Aldea Oculta de la Hoja. Suele tener mal carácter, pero se preocupa mucho por el bienestar de las personas que quiere. Esta personalidad la llevó a desarrollar sus habilidades curativas y a convertirse en una de las mejores ninjas médicas. Sin embargo, en caso de necesitarlo también posee la capacidad de concentrar el chakra en sus puños para ganar fuerza adicional.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.SakuraHaruno.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Sakura es una kunoichi de la Aldea Oculta de la Hoja. Aunque suele tener mal carácter, se preocupa mucho por las personas que quiere. Esta personalidad la llevó a desarrollar sus habilidades de ninja médico pero también a refinar su técnica para poder concentrar el chakra en sus puños y ganar fuerza adicional.</div>`
         } else if (personaje == "Sasuke Uchiha") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\imagen.pregunta5.opcionD' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Sasuke es un miembro del clan Uchiha, alguna vez uno de los clanes ninja más fuertes de la Aldea Oculta de la Hoja. Sin embargo, su historia es un tanto oscura, ya que su meta es volverse lo suficientemente poderoso como para vengarse de su hermano mayor por haber asesinado al resto de su clan, y su determinación lo llevará a ganar poder cueste lo que cueste.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.SasukeUchiha.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Sasuke es casi el último miembro vivo del clan Uchiha, uno de los clanes ninja más respetados de la Aldea Oculta de la Hoja. Su trágica historia familiar forma su única meta: volverse lo suficientemente poderoso, cueste lo que cueste, como para vengarse de su hermano mayor por haber asesinado al resto de su clan.</div>`
         } else if (personaje == "Monkey D. Luffy") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.MonkeyD.Luffy' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">En una era de piratas donde todas las personas zarpan al mar en búsqueda de fama y riquezas, Luffy zarpa con el único objetivo de convertirse en el rey de los piratas. Aunque zarpó en solitario, en el transcurso de su viaje se cruzará con personas que lo seguirán y se convertirán en miembros de su banda pirata, los "Sombrero de Paja". Luffy no es una persona muy inteligente ni con mucho tacto, pero tiene un fuerte sentido de la justicia. Además, es usuario de la fruta Gomu Gomu, una fruta legendaria que le permite estirarse como una goma, pero a cambio le quita su capacidad para nadar.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.MonkeyD.Luffy.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Luffy zarpa al mar con el único objetivo de convertirse en el rey de los piratas. Aunque zarpó en solitario, en el transcurso de su viaje conocerá personas que lo seguirán y se convertirán en miembros de su banda pirata: los "Sombrero de Paja". Luffy no es una persona muy inteligente ni con mucho tacto, pero tiene un fuerte sentido de la justicia. Además, es usuario de la fruta Gomu Gomu: una fruta legendaria que le permite estirarse como una goma, pero que a cambio le quita su capacidad para nadar.</div>`
         } else if (personaje == "Zoro Roronoa") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.ZoroRoronoa' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">El Cazador de Piratas Roronoa Zoro es un combatiente de la banda pirata "Sombrero de Paja" que se une a la tripulación luego de ser rescatado por Luffy de las manos de la Marina, una institución supuestamente creada con el objetivo de eliminar la creciente pirateria en la nueva era pirata. Aunque hasta entonces se había dedicado a ser cazarrecompensas, luego de la petición de Luffy Zoro acepta unirse con la condición de que no obstaculice su objetivo principal: el de convertirse en el mejor espadachín del mundo. Su técnica especial se llama Santoryu, o "estilo de tres espadas", porque literalmente utiliza una espada en cada mano y una tercera en la boca.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.ZoroRoronoa.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">El Cazador de Piratas Roronoa Zoro, ex cazarrecompensas, se vuelve un combatiente de la banda pirata "Sombrero de Paja" luego de ser rescatado por Luffy de las manos de la Marina. Zoro acepta unirse a la tripulación con la única condición de que ello no obstaculice su objetivo principal: el de convertirse en el mejor espadachín del mundo. Su técnica especial se llama Santoryu, porque literalmente se basa en un estilo que utiliza tres espadas: una espada en cada mano y una tercera en la boca.</div>`
         } else if (personaje == "Nami") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Nami' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Nami.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje">Apodada "Gata Ladrona", Nami es la navegante de la banda pirata "Sombrero de Paja". Si bien es un tanto cobarde, ella es capaz de arriesgarse por las personas que más valora. Su poder reside en su conocimiento sobre los fenómenos climáticos y en su capacidad de manipular ciertas condiciones climáticas con su arma personalizada, el "Clima-Tact".</div>`
         } else if (personaje == "Anya Forger") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.AnyaForger' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Anya es una niña pequeña con una mente curiosa por demás y fiel amante de los animes de espías y el maní. Ella llega a un orfanato luego de escapar de una organización secreta que llevaba a cabo experimentos en niños, de los que heredó el poder de leer mentes. Por si fuera poco drama, Anya es adoptada por Loid Forger, el mejor espía de Westalis, con el objetivo de cumplir una misión para conservar la paz mundial. Sus sueños incluyen vivir en un castillo, tener una pistola que no haga ruido, y ser la heroína que salva el día.</div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.AnyaForger.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Anya es una niña pequeña muy curiosa y con una afición por la aventura. Amante de los animes de espías y el maní, Anya es adoptada por Loid Forger, el mejor espía de Westalis, con el objetivo de cumplir una misión para conservar la paz mundial. Lo que su nuevo padre no sabe es que ella posee el increíble poder de leer mentes, y es la única que sabrá los secretos que guardan todos a su alrededor...</div>`
         } else if (personaje == "Loid Forger") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.LoidForger.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Loid Forger es la nueva identidad del mejor espía de Westalis, alias "Twilight". Con el objetivo de de conservar la paz mundial, Loid debe secretamente llevar a cabo la "operación Strix": formar una familia falsa, inscribir a su hijo en una institución educativa de élite y lograr que acumule méritos llamados "Stella", para acceder a las reuniones de padres de estudiantes de honor y contactar así a su cauto objetivo. Capaz de cumplir innumerables y complejas misiones, esta misión será el mayor desafío que haya enfrentado hasta el momento.</div>`
         } else if (personaje == "Yor Forger") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.YorForger.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Yor Briar conoce a Loid en una situación muy oportuna: ella necesitaba una pareja falsa para no preocupar a su hermano, y él una madre falsa para poder ingresar a su hija en un colegio de élite. En un instante, ambos forman un vínculo más permanente que les permite a ambos continuar con sus respectivas misiones ocultas. Yor es una persona bastante despistada pero de buen corazón. Además, su fuerza y sus habilidades de combate son del más alto nivel.</div>`
         } else if (personaje == "Izuku Midoriya") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.IzukuMidoriya.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Izuku fue una de las pocas personas que en una sociedad de superhumanos no desarrolló ningún superpoder. Sin embargo, el héroe que más admira, el superhéroe #1 "All Might", le otorgará el don "One for All", el único superpoder que puede heredarse y fortalecerse con cada generación. Si bien al principio no logra adaptarse bien al poder acumulado de "One for All", su determinación y su capacidad de análisis le permitirán sacarle todo el provecho a su poder heredado.</div>`
         } else if (personaje == "Ochaco Uraraka") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.OchacoUraraka.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Bakugou Katsuki") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.BakugouKatsuki.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Senku Ishigami") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.SenkuIshigami.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Kohaku") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Kohaku.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Chrome") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Chrome.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Gon Freecs") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.GonFreecs.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Killua Zoldyck") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.KilluaZoldyck.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Kurapika") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Kurapika.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Tanjiro Kamada") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.TanjiroKamada.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Zenitsu Agatsuma") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.ZenitsuAgatsuma.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Inosuke Hashibira") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.InosukeHashibira.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Naofumi Iwatani") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NaofumiIwatani.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Raphtalia") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Raphtalia.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Filo") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Filo.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Yuji Itadori") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.YujiItadori.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Megumi Fushiguro") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.MegumiFushiguro.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Nobara Kugisaki") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NobaraKugisaki.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Eren Jaeger") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.ErenJaeger.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Mikasa Ackerman") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.MikasaAckerman.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Armin Arlert") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.ArminArlert.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Natsu Dragneel") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NatsuDragneel.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Lucy Heartfilia") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.LucyHeartfilia.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Gray Fullbuster") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.GrayFullbuster.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Asta") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Asta.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje"></div>`
         } else if (personaje == "Yuno") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.Yuno.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Con talento con la magia desde su nacimiento, Yuno comienza su carrera como caballero mágico en la casa más prestigiosa: "Amanecer Dorado". Si bien es discriminado por su origen plebeyo, su determinación por convertirse en el Rey Mago lo llevan a pulir aún más sus habilidades mágicas, incluso a niveles superiores a los de la realeza. Además de sus propias capacidades, Yuno fue elegido por el espíritu de viento, Sylph, que le otogará su poder en batalla.</div>`
         } else if (personaje == "Noelle Silva") {
-            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NarutoUzumaki' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+            HTMLInterno = `<img id="imagen.personaje" src='img\\personaje.NoelleSilva.jpg' alt="imagen.personaje.resultado">
+        <div id="descripcion.personaje">Noelle es miembro de la nobleza pero se unió al escuadrón de los "Toros Negros", la casa más marginada de caballeros mágicos, debido a su falta de control mágico. Como podría esperarse de la nobleza, su personalidad es naturalmente engreída, pero su tiempo con los Toros Negros va a ablandar su carácter, y también mejorar su técnica de control de mana. Su elemento mágico es el agua, lo que también refleja su flexibilidad y dinamismo.</div>`
         };
 
+        console.log(`Sos ${porcentaje} ${personaje}`);
         document.getElementById('nombreDePersonaje').innerHTML = `Sos ${porcentaje} ${personaje}`;
         document.getElementById('contenedorPersonaje').innerHTML = HTMLInterno
         overlay.classList.add('active');
@@ -878,7 +879,6 @@ function giveMeMyCharacter() {
 };
 
 function cerrarPopup() {
-    e.preventDefault();
     overlay.classList.remove('active');
     popup.classList.remove('active');
 };
