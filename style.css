@@ -596,11 +596,11 @@ body{
 	opacity: 0;
 }
 
-.popup form .contenedor-personaje {
+.popup.contenedor-personaje {
 	opacity: 0;
 }
 
-.popup form .contenedor-personaje input {
+.popup.contenedor-personaje {
 	width: 100%;
 	margin-bottom: 20px;
 	height: 52px;
@@ -610,7 +610,7 @@ body{
 	border: 1px solid #BBBBBB;
 }
 
-.popup form .btn-submit {
+.popup.btn-submit {
 	padding: 0 20px;
 	height: 40px;
 	line-height: 40px;
@@ -624,7 +624,7 @@ body{
 	transition: .3s ease all;
 }
 
-.popup form .btn-submit:hover {
+.popup.btn-submit:hover {
 	background: rgba(94,125,227, .9);
 }
 
@@ -640,7 +640,9 @@ img#imagen\.personaje {
 }
 
 div#descripcion\.personaje {
-    padding: 0rem 1rem 1rem;
+    padding: 0rem 2rem 2rem;
+    text-align: justify;
+    font-weight: 600;
     font-size: 20px;
     align-items: center;
     opacity: 0;
