@@ -585,20 +585,17 @@ function sumaDePersonajes() {
         Asta += 1;
     }
     if (p3opcionelegida == "P3OC") {
-        NarutoUzumaki += 1;
-        SasukeUchiha += 1;
-        MonkeyDLuffy += 1;
-        ZoroRoronoa += 1;
-        BakugouKatsuki += 1;
-        Kurapika += 1;
-        InosukeHashibira += 1;
-        Raphtalia += 1;
-        YujiItadori += 1;
-        ErenJaeger += 1;
-        MikasaAckerman += 1;
-        NatsuDragneel += 1;
-        GrayFullbuster += 1;
-        Asta += 1;
+        SakuraHaruno += 1;
+        Nami += 1;
+        YorForger += 1;
+        OchacoUraraka += 1;
+        Chrome += 1;
+        GonFreecs += 1;
+        ZenitsuAgatsuma += 1;
+        Filo += 1;
+        NobaraKugisaki += 1;
+        LucyHeartfilia += 1;
+        NoelleSilva += 1;
     }
 
     // PREGUNTA 4
@@ -724,7 +721,7 @@ function calculoDePersonajes() {
         "Naofumi Iwatani": NaofumiIwatani,
         "Raphtalia": Raphtalia,
         "Filo": Filo,
-        "Yuji Itadori": YujiItadori,
+        "Itadori Yuji": YujiItadori,
         "Megumi Fushiguro": MegumiFushiguro,
         "Nobara Kugisaki": NobaraKugisaki,
         "Eren Jaeger": ErenJaeger,
@@ -808,13 +805,13 @@ function mostrarResultado(personaje, porcentaje) {
         <div id="descripcion.personaje">Luego de que el mundo fuera petrificado por miles de años, Senku desea reconstruir la civilización a nivel mundial usando su intelecto. Aunque puede llegar a ser un tanto manipulador para lograr lo que busca, Senku nunca dejará a alguien abandonado e intentará siempre mantener a todos a salvo. Su orgullo no le permitiría jamás dejar la ciencia, incluso si eso le costara la vida. Su fortaleza está en su conocimiento del mundo científico y su intelecto para aplicarlo en un mundo de piedra en el que ya no quedan rastros de tecnología moderna.</div>`
     } else if (personaje == "Kohaku") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.Kohaku.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Kohaku es una chica de la Aldea Ishigami, una aldea que nace luego de la caida del mundo moderno for un fenómeno de petrificación misterioso. Es valiente ante el peligro, justa a la hora de hacer juicios y muy protectora con sus seres queridos. También tiende a ser muy rebelde ante las reglas. Su fortaleza está en su imponente fuerza bruta y gran capacidad de combate.</div>`
+        <div id="descripcion.personaje">Kohaku es una chica de la Aldea Ishigami, una aldea que nace luego de la caida del mundo moderno por un fenómeno de petrificación misterioso. Es valiente ante el peligro, justa a la hora de hacer juicios y muy protectora con sus seres queridos. También tiende a ser muy rebelde ante las reglas. Su fortaleza está en su imponente fuerza bruta y gran capacidad de combate.</div>`
     } else if (personaje == "Chrome") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.Chrome.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje">Luego de que un evento misterioso convirtió a la humanidad en piedra por 3700 años, Chrome es el "hechicero" de una tribu sin ciencia. Si bien es orgulloso en cuanto a su conocimiento, su mente desbordante de curiosidad por lo desconocido lo llevará a convertirse en aprendiz de Senku, un científico de la época previa a la petrificación, al que ayudará a restaurar la sociedad moderna con su reino científico. Su fortaleza está en su determinación por descubrir el funcionamiento de las cosas y su conocimiento adquirido por la experiencia, recolectando y probando minerales y plantas.</div>`
     } else if (personaje == "Gon Freecs") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.GonFreecs.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Gon es optimista por naturaleza, y su extroversión e inocencia atraen a muchos hacia él. En búsqueda de su padre, del que lo único que sabe es que es un Cazador profesional, su aventura comienza tomando un examen para convertirse en un Cazador. En la primera ronda del examen de Cazador se hace amigo de tres personas con las que establece una buena relación: Killua, Kurapika y Leorio​. La fortaleza de Gon está en su gran agilidad y sentidos sobrehumanos.</div>`
+        <div id="descripcion.personaje">Gon es optimista por naturaleza, y su extroversión e inocencia atraen a muchos hacia él. En búsqueda de su padre, del que lo único que sabe es que es un Cazador profesional, su aventura comienza tomando un examen para convertirse en un Cazador. En la primera ronda del examen de Cazador se hace amigo de tres personas con las que establece una buena relación: Killua, Kurapika y Leorio​. La fortaleza de Gon está en su gran agilidad y sus sentidos sobrehumanos.</div>`
     } else if (personaje == "Killua Zoldyck") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.KilluaZoldyck.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje">Killua fue educado por su familia para ser un asesino profesional. Sin embargo, él no quiere seguir el camino decidido por su padre y por eso huye de su hogar y llega al Examen de Cazador, solamente para pasar el rato. Killua es capaz de realizar técnicas de camuflaje, y es prácticamente inmune a los venenos y electricidad porque desde pequeño lo entrenaron para ser capaz de resistir fuertes torturas. Además de estas capacidades, Killua posee una gran fuerza física y la capacidad de transmutar su aura en electricidad, para lanzarlo contra oponentes o para imbuir su cuerpo para ser todavía más rápido y fuerte.</div>`
@@ -823,49 +820,49 @@ function mostrarResultado(personaje, porcentaje) {
         <div id="descripcion.personaje">Kurapika es el único sobreviviente de la tribu Kurta, asesinada por la banda de los Gen'ei Ryodan por sus ojos escarlata, considerados una de las maravillas del mundo de Hunter × Hunter. Kurapika desea convertirse en Cazador para vengarse de ellos y así poder recuperar los ojos de su gente. Su técnica especial involucra juramentos que lo vuelven más fuerte cuando respeta las condiciones que se impone, ganando más poder cuando las condiciones son más arriesgadas y complejas: Kurapika juró como primera condición usar sus habilidades especiales para combatir y acabar con el Gen'ei Ryodan, y como segunda condición morir si no respetara la primera condición.</div>`
     } else if (personaje == "Tanjiro Kamada") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.TanjiroKamada.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje">Tanjiro es un adolescente que se convierte en cazador de demonios luego de que su familia fuera asesinada por uno. Su hermana Nezuko sobrevivió al ataque, pero terminó convertida en demonio, por lo que Tanjiro emprende una búsqueda para restaurar su humanidad. La capacidad de Tanjiro incluye su agudizado sentido del olfato, y su capacidad para usar la Respiración de Concentración Total, que lo vuelve mucho más fuerte y rápido, así como la Respiración del Agua y la Danza del dios del Fuego, que niega las habilidades regenerativas de los demonios.</div>`
+        <div id="descripcion.personaje">Tanjiro es un adolescente que se convierte en cazador de demonios luego de que su familia fuera asesinada por uno. Su hermana Nezuko sobrevivió al ataque, pero terminó convertida en demonio, por lo que Tanjiro emprende una búsqueda para restaurar su humanidad. Las habilidades de Tanjiro incluyen su agudizado sentido del olfato, y su capacidad para usar la Respiración de Concentración Total, que lo vuelve mucho más fuerte y rápido, así como la Respiración del Agua y la Danza del dios del Fuego, que niega las habilidades regenerativas de los demonios.</div>`
     } else if (personaje == "Zenitsu Agatsuma") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.ZenitsuAgatsuma.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Zenitsu es un Cazador de Demonios y un compañero de viaje de Tanjiro Kamado. Por naturaleza, Zenitsu es cobarde. Siempre afirma que no tiene mucho tiempo de vida debido al peligroso trabajo de ser un Cazador de demonios. El sentido del oído de Zenitsu es lo suficientemente agudo como para escuchar hasta la más lejana vibración sonora en su alrededor. Además, se vuelve más fuerte cuando duerme: cuando su vida está en peligro, el miedo que experimenta excede sus límites y lo hace caer inconsciente, que es cuando alcanza su verdadero potencial y puede realizar su esgrima a un alto nivel basado únicamente en el instinto. La Respiración que utiliza es la del Rayo.</div>`
     } else if (personaje == "Inosuke Hashibira") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.InosukeHashibira.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Inosuke es un Cazador de Demonios, creador y único usuario conocido de la Respiración de la Bestia. A raíz de vivir en las montañas prácticamente toda su vida, Inosuke desarrolló un agudo sentido del tacto, capaz de reconocer hasta la menor vibración en el aire y así poder detectar tanto a enemigos como aliados. Además, Inosuke posee un control completo de su propio cuerpo, pudiendo dislocarse las articulaciones para ejecutar ataques más efectivos y moverse entre espacios reducidos, así como también mover sus órganos vitales a voluntad, para evitar que estos sean dañados por ataques enemigos.</div>`
     } else if (personaje == "Naofumi Iwatani") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.NaofumiIwatani.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Naofumi Iwatani fue invocado a otro mundo, en el que se convierte en uno de los 4 héroes legendarios: el Héroe del Escudo. Aunque inicia en este mundo lleno de esperanza e inocencia, pierde su credibilidad como héroe luego de ser culpado de crímenes que no cometió, y se vuelve así desconfiado, cínico y grosero con otros. Preparado para recibir una traición de parte de cualquiera, decide vivir solamente para derrotar a las olas de calamidad y que lo devuelvan finalmente al mundo del que proviene. Es hasta que conoce a Raphtalia que su personalidad vuelve, aunque sea en parte, a ser lo que era; aún desconfiado, pero mostrándose amable con ella y con la gente que necesita su ayuda. Sus habilidades curativas y la forma de su compañera Filo le ganan el nombre del "Santo del Dios Pájaro".</div>`
     } else if (personaje == "Raphtalia") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.Raphtalia.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Raphtalia es una Semi-Humana tipo mapache y la primera miembro del equipo del Héroe del Escudo, luego de que él la adquiere como esclava para que se convierta en la fuerza de ataque de su equipo, ya que él no podía empuñar ningún arma. Raphtalia era inicialmente muy tímida y temerosa como resultado de su condición de esclavitud y otros eventos traumáticos sufridos en su pasado, pero logra superar su trauma para ayudar a Naofumi a vencer a las Olas de la Calamidad y que nadie más sufra lo que sufrió ella. Raphtalia trata a las demás personas con respeto y, aunque es gentil por naturaleza, también puede enojarse mucho al presenciar injusticias. Además, al viajar a otro mundo, fue escogida por un arma vasalla, convirtiéndose en la Heroína de la Katana.</div>`
     } else if (personaje == "Filo") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.Filo.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
-    } else if (personaje == "Yuji Itadori") {
+        <div id="descripcion.personaje">Filo es una Filolial nacida de un huevo de monstruo que Naofumi le compró a junto a Raphtalia a un comerciante de esclavos. Se convierte en una reina Filolial gracias a su asociación con el Héroe del Escudo y al reconocimiento de la anterior reina Filolial, Fitoria. Filo puede cambiar entre su forma de Filolial, una criatura con forma de lechuza y más grande que un avestruz, y su forma humana, que tiene la apariencia de una niña con alas en la espalda. Su personalidad es la de una pequeña mimada, a veces un tanto caprichosa, pero empática e inocente. Aunque no puede volar, su fuerza le permite correr a grandes velocidades e incluso tirar del carro que llevaba al equipo del Héroe del Escudo y sus mercancías.</div>`
+    } else if (personaje == "Itadori Yuji") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.YujiItadori.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Itadori es un estudiante de primer año del Colegio Técnico de Magia Metropolitana de Tokio y recipiente del Rey de las Maldiciones, Sukuna, luego de ingerir uno de sus dedos y convertirse en su recipiente. A partir de entonces, Itadori tiene la misión de encontrar los restos de Sukuna que se encuentran esparcidos por todo Japón e ingerirlos, para destruir para siempre al Rey de las Maldiciones. Aunque poseía una fuerza física increíble, no tenía interés por ningún deporte, y solía pasar gran parte de su tiempo en el Club de Ocultismo. Itadori es una persona honesta, amigable y con la voluntad de sacrificarse por los demás, provocada por las últimas palabras de su abuelo, que le pide que siempre ayude a los demás.</div>`
     } else if (personaje == "Megumi Fushiguro") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.MegumiFushiguro.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Megumi es un estudiante de primer año del Colegio Técnico de Magia Metropolitana de Tokio, y compañero de Yuji Itadori y Nobara Kugisaki. Como miembro de sangre de uno de los tres grandes clanes, nació con el talento innato de hacer uso de la Técnica de Sombras de Diez Tipos, que le permiten invocar shikigamis. Megumi suele ser un joven bastante tranquilo, serio y reservado. Aunque aparenta ser estoico y calculador, Megumi desea ayudar a las personas que considera buenas o amables. Cree que el mundo es injusto y que un chamán es una herramienta para garantizar que las personas amables tengan una oportunidad de vivir.</div>`
     } else if (personaje == "Nobara Kugisaki") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.NobaraKugisaki.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Nobara es una estudiante de primer año del Colegio Técnico de Magia Metropolitana de Tokio, y compañera de Yuji Itadori y Megumi Fushiguro. Es una joven apasionada, extremadamente expresiva y honesta sobre sus sentimientos. Ella tiene un alto sentido del deber como hechicera jujutsu, es una luchadora orgullosa y sabe lo que es importante para ella: aunque muestra interés en todo lo relacionado con el mundo del modelaje y las compras, está dispuesta a abandonar todo sí eso ayuda en salvar a otros. Su Técnica de Muñeco de Paja consiste en canalizar su energía maldita a través de un muñeco de paja para compartir el daño entre su muñeco de paja y su objetivo. Para usarla, Nobara utiliza un martillo y clavos de metal, en los que infunde su energía maldita.</div>`
     } else if (personaje == "Eren Jaeger") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.ErenJaeger.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Eren decide entrar en la milicia tras haber presenciado la aniquilación de su pueblo y la muerte de su madre a manos de los titanes, por lo que guarda una venganza personal hacia ellos. Desde niño, Eren siempre ha sido una persona determinada, de fuertes ideales y con un gran sentido de la justicia. Eren admiraba bastante a los reclutas y les consideraba "héroes" por sus grandes hazañas incluso si estos no salían exitosos de sus expediciones. Tras haber encontrado los secretos ocultos en el sótano de su padre, Eren se enteró del origen de los titanes y de la verdadera historia del mundo, descubriendo de esa forma qué es su verdadero enemigo y tomando el objetivo de eliminar a aquella amenaza para finalmente poder hallar la libertad. Eren es el último portador del Titán de Ataque, lo que le permite transformarse en un titán de 15 metros a voluntad, siempre que tenga suficiente energía para hacerlo.</div>`
     } else if (personaje == "Mikasa Ackerman") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.MikasaAckerman.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Mikasa es la hermana adoptiva de Eren Jaeger y, junto con Armin, se une al Cuerpo de Exploración para ayudar a Eren a retomar la Muralla María. Mikasa es físicamente fuerte y de personalidad bastante reservada. Sin embargo, lo da todo por las personas que le importan, ya que las ve como si fueran su familia. Tiene un fuerte sentido de la justicia, pero siempre seguirá a Eren e intentará mantenerlo a salvo. Además de su gran fuerza, ella tiene una prodigiosa habilidad con el equipo de Maniobras 3D, pudiendo tomar fácilmente a los titanes con rapidez y eficiencia. Esto ha dado lugar a que se le haya reconocido como una genio militar y que tiene el "valor de cien soldados rasos".</div>`
     } else if (personaje == "Armin Arlert") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.ArminArlert.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Armin es un amigo de la infancia de Eren Jaeger y Mikasa Ackerman. Armin era muy tímido cuando era niño, y junto al hecho de que era físicamente débil, a menudo terminaba como un blanco fácil para los matones locales. Era tan tímido que él se negaba a luchar, manteniendo su opinión sin usar la violencia, siempre necesitando la ayuda de Eren y Mikasa para que lo protegieran. Al crecer, aunque físicamente seguía siendo más débil que el resto de sus compañeros, demuestró una gran inteligencia a través de su capacidad estratégica y soluciones rápidas. Además, Armin es una persona leal y está dispuesto a ponerse en peligro para defender a sus amigos.</div>`
     } else if (personaje == "Natsu Dragneel") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.NatsuDragneel.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Natsu es hijo adoptivo del Dragón de fuego Igneel y miembro del gremio Fairy Tail. Tiene un carácter temerario, y a pesar de sus constantes peleas con los demás miembros del gremio, los aprecia mucho. Su debilidad son los transportes: cada vez que sube a un transporte se marea, ya sea un barco, tren, carro o incluso una persona. Sólo cuando Happy, su amigo Exceed, lo lleva de un lugar a otro no sufre de estos mareos, porque él considera a Happy un amigo. Sus técnicas utilizan magia Dragon Slayer de fuego.</div>`
     } else if (personaje == "Lucy Heartfilia") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.LucyHeartfilia.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Lucy es una maga de Espíritus Celestiales y una nueva miembro del Gremio Fairy Tail. Es una de las magas más cuerdas del gremio, preguntándose la primera vez que entró si habría algún mago serio por allí. A pesar de su actitud cobarde, no tiene problemas con la lucha y con hacer frente felizmente a los peligros, aun si termina herida, por sus compañeros del gremio. Aunque sus poderes no son tan abrumadores como los de sus compañeros de equipo, Lucy ha probado ser una luchadora muy capaz por ella misma, usando su gran inteligencia a su favor.</div>`
     } else if (personaje == "Gray Fullbuster") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.GrayFullbuster.jpg' alt="imagen.personaje.resultado">
-        <div id="descripcion.personaje"></div>`
+        <div id="descripcion.personaje">Gray es un miembro del gremio Fairy Tail, dentro del cual generalmente hace equipo con Natsu Dragneel, Lucy Heartfilia, Erza Scarlet y Happy. Tiene una personalidad relajada, pero a menudo puede ser serio cuando el momento lo requiere. Él y Natsu tienen una rivalidad amistosa, y a menudo se los puede ver luchando entre sí verbal o físicamente. Su poder radica en su uso de magia de Hielo.</div>`
     } else if (personaje == "Asta") {
         fotoYDescripcionPersonaje = `<img id="imagen.personaje" src='img\\personaje.Asta.jpg' alt="imagen.personaje.resultado">
         <div id="descripcion.personaje">Asta nunca desarrolló ningún tipo de poder mágico, pero no dejó que esto socavara su determinación por convertirse en Rey Mago y se esforzó diariamente por entrenar su cuerpo físico. Aunque inicialmente no recibe un grimorio, en un misterios episodio un grimorio de 5 hojas aparece ante él y le permite retirar de él una espada que puede "cortar" la magia. En el examen de caballeros mágicos, ningún escuadrón confía en su poder desconocido y en su nula capacidad mágica, pero su fuerza física, el poder de la antimagia y su valentía impresionan a Yami Sukehiro, el capitán de los Toros Negros, la orden para marginados donde comienza su carrera como caballero mágico.</div>`

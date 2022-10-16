@@ -28,7 +28,7 @@
             </div>
             <div class="main-title-line"></div>
         </div>
-        <h1 class="main-title titulo-cuestionario bloquepregunta">¿Qué personaje de anime sos?</h1>
+        <h1 class="main-title titulo-cuestionario bloquepregunta" id="comienzoCuestionario">¿Qué personaje de anime sos?</h1>
 
         <!------------------------------------INTRODUCCIÓN------------------------------------>
         <h1 class="main-title-cuestionario">Descubrí qué personaje de anime sos en función de tu personalidad,
@@ -64,7 +64,8 @@
                 </div>
             </div>
             <div class="bloque-formulario">
-                <div class="elemento-formulario alerta" id="alertaopcion1">Por favor, seleccione una opción para la pregunta 1.</div>
+                <div class="elemento-formulario alerta" id="alertaopcion1">Por favor, seleccione una opción para la
+                    pregunta 1.</div>
             </div>
         </div>
 
@@ -97,7 +98,8 @@
                 </div>
             </div>
             <div class="bloque-formulario">
-                <div class="elemento-formulario alerta" id="alertaopcion2">Por favor, seleccione una opción para la pregunta 2.</div>
+                <div class="elemento-formulario alerta" id="alertaopcion2">Por favor, seleccione una opción para la
+                    pregunta 2.</div>
             </div>
         </div>
 
@@ -131,7 +133,8 @@
                 </div>
             </div>
             <div class="bloque-formulario">
-                <div class="elemento-formulario alerta" id="alertaopcion3">Por favor, seleccione una opción para la pregunta 3.</div>
+                <div class="elemento-formulario alerta" id="alertaopcion3">Por favor, seleccione una opción para la
+                    pregunta 3.</div>
             </div>
         </div>
 
@@ -173,7 +176,8 @@
                 </div>
             </div>
             <div class="bloque-formulario">
-                <div class="elemento-formulario alerta" id="alertaopcion4">Por favor, seleccione una opción para la pregunta 4.</div>
+                <div class="elemento-formulario alerta" id="alertaopcion4">Por favor, seleccione una opción para la
+                    pregunta 4.</div>
             </div>
         </div>
 
@@ -215,19 +219,21 @@
                 </div>
             </div>
             <div class="bloque-formulario">
-                <div class="elemento-formulario alerta" id="alertaopcion5">Por favor, seleccione una opción para la pregunta 5.</div>
+                <div class="elemento-formulario alerta" id="alertaopcion5">Por favor, seleccione una opción para la
+                    pregunta 5.</div>
             </div>
         </div>
         <!------------------------------------POPUP DE RESULTADO------------------------------------>
         <div class="overlay" id="overlay">
             <div class="popup" id="popup">
-                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"" onclick=" cerrarPopup()"><i
+                <a href="#bloque-pregunta-5" id="btn-cerrar-popup" class="btn-cerrar-popup"" onclick=" cerrarPopup()"><i
                         class="fas fa-times"></i></a>
                 <h3>TU RESULTADO ES:</h3>
                 <h4 id="nombreDePersonaje"></h4>
                 <div id='contenedorPersonaje'>
                 </div>
-                <button class="btn-submit boton-formulario" onclick="completarCuestionario()">¡Qué bien!</button>
+                <a href="#comienzoCuestionario"><button class="btn-submit boton-formulario"
+                        onclick="completarCuestionario()">¡Qué bien!<br>Volver a intentar</button></a>
             </div>
         </div>
         <!------------------------------------BOTÓN DE ENVÍO------------------------------------>
