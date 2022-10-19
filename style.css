@@ -889,12 +889,6 @@ div#descripcion\.personaje {
     letter-spacing: 2px;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 75% 25%;
-    
-}
-
 .container-news{
     background-color: #324766;
     border: 6px solid #1D3557;
@@ -968,23 +962,6 @@ div#descripcion\.personaje {
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-}
-    
-.container-general-news{
-    background-color: #ffffff;
-    background-position: right;
-    display: flexbox;
-    border-radius: 5px;
-    box-sizing: content-box;
-}
-
-.grid-item{
-    background-image: url(img/chainsaw\ man.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 50px 50px;
-    box-sizing: content-box;
 }
 
 /*FOOTER*/
