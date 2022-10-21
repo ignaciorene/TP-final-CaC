@@ -22,6 +22,12 @@ document.getElementById('header').innerHTML = `
             </a>
         </li>
         <li class="menu-item">
+            <a href="./Pokedex.html" class="menu-link">
+                <i class="uil uil-books"></i>
+                <p>Pokedex</p>
+            </a>
+        </li>
+        <li class="menu-item">
             <a href="./Contacto.html" class="menu-link">
                 <i class="uil uil-postcard"></i>
                 <p>Contacto</p>
