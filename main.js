@@ -1064,23 +1064,25 @@ export default function loginContainerValidations(){
 
 const pokedexContainer=document.getElementById('pokedex-main-container');
 
-for (let i=1;i<=20;i++){
-    crearPokedex(i)
-}
-
-async function crearPokedex(id){
-    let data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-    .then(response => response.json());
-
-    pokedexContainer.innerHTML=pokedexContainer.innerHTML+`
-    <div class="pokedex-card">
-        <div class="pokedex-img">
-            <img src="${data.sprites.front_default}" alt="${data.name}">
+if (pokedexContainer!=null){
+    for (let i=1;i<=20;i++){
+        crearPokedex(i)
+    }
+    
+    async function crearPokedex(id){
+        let data = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+        .then(response => response.json());
+    
+        pokedexContainer.innerHTML=pokedexContainer.innerHTML+`
+        <div class="pokedex-card">
+            <div class="pokedex-img">
+                <img src="${data.sprites.front_default}" alt="${data.name}">
+            </div>
+            <div class="pokedex-text">
+                <h3>${data.name}</h3>
+                <p>Tipo: ${data.types[0].type.name}</p>
+            </div>
         </div>
-        <div class="pokedex-text">
-            <h3>${data.name}</h3>
-            <p>Tipo: ${data.types[0].type.name}</p>
-        </div>
-    </div>
-    `;
+        `;
+    }
 }
