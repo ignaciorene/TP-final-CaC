@@ -1230,6 +1230,7 @@ footer{
     width: 15rem;
     height: 15rem;
     border: 1px solid #1D3557;
+    background-color: #ffffff;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 10%;
 }
