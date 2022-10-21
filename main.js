@@ -182,6 +182,85 @@ document.querySelectorAll('.carousel-container').forEach(carousel => {
     }
 });
 
+//CARTAS DE NOTICIAS
+const listaNoticias =[{
+    'tag':'Noticias',
+    'title':'Reseña | Komi-san Cant Communicate',
+    'date':'13 Septiembre 2022',
+    'image':'img/animecon argentina.jpg'
+},{
+    'tag':'Noticias',
+    'title':'Explotó la Animecon Argentina 2022 con la presentación de Burnout Syndromes',
+    'date':'5 Septiembre 2022',
+    'image':'img/background.jpeg'
+},{
+    'tag':'Noticias',
+    'title':'Ai Yazawa espera poder retomar la serialización de Nana',
+    'date':'13 Septiembre 2022',
+    'image':'img/ejemplo-noticia.jpeg'
+},{
+    'tag':'Noticias',
+    'title':'Chainsaw Man ya tiene fecha de estreno para su adaptación al anime',
+    'date':'13 Septiembre 2022',
+    'image':'img/chainsaw man.jpg'
+},{
+    'tag':'Noticias',
+    'title':'La segunda entrega de Sword Art Online: Progressive retrasa su estreno hasta octubre',
+    'date':'13 Septiembre 2022',
+    'image':'img/imagen.pregunta2.opcionA.jpg'
+},{
+    'tag':'Noticias',
+    'title':'La segunda temporada de In/Spectre revela nuevo visual',
+    'date':'13 Septiembre 2022',
+    'image':'img/imagen.pregunta4.opcionD.jpg'
+},{
+    'tag':'Noticias',
+    'title':'Reseña | SPY x FAMILY',
+    'date':'13 Septiembre 2022',
+    'image':'img/personaje.AnyaForger.jpg'
+},{
+    'tag':'Noticias',
+    'title':'La franquicia de Higehiro supera los 2.5 millones de copias en circulación',
+    'date':'13 Septiembre 2022',
+    'image':'img/personaje.BakugouKatsuki.jpg'
+},{
+    'tag':'Noticias',
+    'title':'El manga Sono Bisque Doll wa Koi wo Suru entra en una pausa de un mes',
+    'date':'13 Septiembre 2022',
+    'image':'img/imagen.pregunta5.opcionC.jpg'
+},{
+    'tag':'Noticias',
+    'title':'El manga Blend S está por finalizar su serialización',
+    'date':'13 Septiembre 2022',
+    'image':'img/imagen.pregunta4.opcionB.jpg'
+}]
+
+cardContainer=document.getElementById('main-card-container');
+
+if (cardContainer!=null){
+    for (noticia in listaNoticias) {
+        cardContainer.innerHTML=cardContainer.innerHTML + `
+        <div class="main-card" style="background-image: url('${listaNoticias[noticia].image}');">
+                <div class="main-card-background">
+                    <a href="./Noticias.html">
+                        <div class="main-card-text-container">
+                            <div class="main-card-tag">
+                                <p>${listaNoticias[noticia].tag}</p>
+                            </div>
+                            <div class="main-card-title">
+                                <h3>${listaNoticias[noticia].title}</h3>
+                            </div>
+                            <div class="main-card-text">
+                                <p>${listaNoticias[noticia].date}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            `
+    }
+}
+
 //CUESTIONARIO
 
 //SELECCIÓN DE OPCIONES
@@ -928,3 +1007,49 @@ function enviarContacto() {
         alert(`Saludos ${nombreCompleto}: ¡Muchas gracias por enviar su mensaje! Es muy valioso para nosotros.`);
     }
 };
+
+//LOGIN & SIGNUP
+/*
+const d = document
+
+export default function loginContainerValidations(){
+
+    const $form = d.querySelector(".login-container");
+    $inputs = d.querySelectorAll(".login-container [required]");
+
+    console.log($inputs);
+
+    $inputs.forEach((input)=>{
+        const $span = d.createElement("span");
+        $span.id = input.name;
+        $span.textContent = input.title;
+        $span.classList.add(".login-container", "none");
+        input.insertAdjacentElement("afterend",$span);
+
+    });
+
+    d.addEventListener("keyup", (e) =>{
+        if(e.target.matches(".login-container [required]")){
+            let $input = e.target;
+                pattern = $input.pattern || $input.dataset.pattern;
+            
+            //console.log($input, pattern);
+
+            if(pattern && $input.value !==""){
+                //console.log("El input tiene patrón");
+                let regex = new RegExp(pattern);
+                return !regex.exec($input.value)
+                ? d.getElementsByClassName($input.name).classList.add("is-active")
+                : d.getElementsByClassName($input.name).classList.remove("is-active");
+            }
+
+            if(!pattern){
+                //console.log("El input no tiene patrón");
+                return $input.value ===""
+                ? d.getElementsByClassName($input.name).classList.add("is-active")
+                : d.getElementsByClassName($input.name).classList.remove("is-active");
+            }
+        }
+    })
+
+}*/

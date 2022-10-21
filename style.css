@@ -330,7 +330,6 @@ body{
     vertical-align: top;
     text-align: left;
     margin: 0.5rem;
-    background-image: url('img/ejemplo-noticia.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -889,12 +888,6 @@ div#descripcion\.personaje {
     letter-spacing: 2px;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 75% 25%;
-    
-}
-
 .container-news{
     background-color: #324766;
     border: 6px solid #1D3557;
@@ -968,18 +961,6 @@ div#descripcion\.personaje {
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-}
-    
-.container-general-news{
-    background-color: #ffffff;
-    background-position: right;
-    border: 6px solid #ffffff;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-right: 3rem;
-    display: flexbox;
-    border-radius: 5px;
-    box-sizing: content-box;
 }
 
 /*FOOTER*/
@@ -1149,4 +1130,80 @@ footer{
     .login-container{
         width: 80%;
     }
+}
+
+/*SIGNUP.HTML*/
+.signup-container{
+    width: 15%;
+    margin: auto;
+    margin-top: 5rem;
+    border: 1px solid #324766;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container fieldset{
+    border: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.signup-container label{
+    margin-bottom: 0.5rem;
+}
+
+.signup-password-container{
+    margin-bottom: 0.5rem;
+}
+
+.signup-container input{
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #D5D5D5;
+}
+
+.signup-container a{
+    text-decoration: none;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.signup-container fieldset button{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #324766;
+    color: white;
+    border: 1px solid #1D3557;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.signup-container fieldset button:hover{
+    cursor: pointer;
+    background-color: #1D3557;
+    border: 1px solid #324766;
+}
+
+.signup-text-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.signup-text-container p{
+    display: inline;
+}
+
+.signup-text-container a{
+    text-decoration: none;
 }

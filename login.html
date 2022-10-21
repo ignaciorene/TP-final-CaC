@@ -16,34 +16,34 @@
 <!--------------------------------------HEADER------------------------------------>
     <header id="header"></header>
 <!--------------------------------------MAIN------------------------------------>
-    <body>
+<body>
 
-        <div class="login-container">
-            <form action="">
-                <fieldset>
-                    <label for="email">Email</label>
-                    <input type="mail" name="email">
-                </fieldset>
-                <fieldset>
-                    <label for="password">Contraseña</label>
-                    <input type="password" name="password">
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </fieldset>
-                <fieldset>
-                    <button type="submit" value="Log in">Log In</button>
-                </fieldset>
-            </form>
-        </div>
-        <div class="login-text-container">
-            <p>¿No tienes una cuenta? </p><a href="./signup.html">Regístrate</a>
-        </div>
-        
+    <div class="login-container">
+        <form action="">
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="mail" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            </fieldset>
+            <fieldset>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" required>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </fieldset>
+            <fieldset>
+                <button type="submit" value="Log in">Log In</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="signup-text-container">
+        <p>¿No tienes una cuenta? </p><a href="./signup.html">Regístrate</a>
+    </div>
+    
 
-    </body>
+</body>
 
 <!--------------------------------------FOOTER------------------------------------>
-    <footer id="footer"></footer>
+<footer id="footer"></footer>
 <!-------------------------------------------------------------------------------->
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
